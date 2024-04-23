@@ -6,3 +6,44 @@
     --purple:#bb83bb;
 }
 /* these root colours make the process of coding quicker, example : "background: --base;" instead of typing out the full code*/
+
+/* Navbar Styling */
+.navbar-custom {
+    background-color: #FDE3E5;
+    width: 100%; 
+    height: 100px;
+  }
+  
+  .navbar-custom .navbar-brand {
+    color: #FD9CC4; 
+    font-size: 24px;
+  }
+  
+  .navbar-custom .navbar-brand img {
+    width: 150px;
+    height: auto;
+  }
+
+  .navbar-custom .navbar-nav .nav-link {
+    color: #FD9CC4; 
+    margin: 0 50px; 
+    font-size: 30px;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #F272B8;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link.active {
+    color: #FFFBF6; 
+  }
+  
+  .navbar-custom .navbar-toggler-icon {
+    background-color: #BB3BB;
+  }
+  
+  /* Centering Navbar Links */
+  .navbar-custom .navbar-nav {
+    width: 100%; 
+    justify-content: center;
+  }
