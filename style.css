@@ -6,3 +6,21 @@
     --purple:#bb83bb;
 }
 /* these root colours make the process of coding quicker, example : "background: --base;" instead of typing out the full code*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
