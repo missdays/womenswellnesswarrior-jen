@@ -32,3 +32,13 @@ p {
     height: 100vh;
     width: 100%;
 }
+
+.logo {
+    width: 10rem;
+    filter: drop-shadow(0 0.1rem 1.5rem var(--base));
+}
+
+.word-logo {
+    width: 10rem;
+    filter: drop-shadow(0 0.1rem 0.9rem var(--base));
+}
