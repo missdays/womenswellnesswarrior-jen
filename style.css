@@ -28,6 +28,9 @@
     color: #FD9CC4; 
     margin: 0 50px; 
     font-size: 30px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
   }
   
   .navbar-custom .navbar-nav .nav-link:hover {
