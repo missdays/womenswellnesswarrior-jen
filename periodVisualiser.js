@@ -1,0 +1,1 @@
+import {userName, userPeriodLength, periodStartDate, userPeriodLength, userCycleLength} from 'script.js'

@@ -15,7 +15,7 @@ ButtonToYear.addEventListener('click', changeToYear);
 ButtonToMonth.addEventListener('click', ChangeToMonth);
 EditPeriod.addEventListener('click', showForm);
 
-/** 
+/**
  * When page loads the form inputs are displayed
 */
 window.onload = showForm();

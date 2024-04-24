@@ -196,3 +196,5 @@ switch(userPeriodStartDate){
     case(userPeriodStartDate > 5):
         break;
 }
+
+export{userName, userPeriodLength, periodStartDate, userPeriodLength, userCycleLength}
