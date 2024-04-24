@@ -80,22 +80,26 @@ p {
     width: 100%; 
     justify-content: center;
   }
-
-
 /* ----------------------------------------- index.html */
 body {
     font-size: 15px;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0;
     color: hsl(24, 5%, 18%);
+    background: url('assets/Free-pink-gradient-aesthetic-background-from-Fotor.webp')
 }
 
 .wrapper {  
     max-width: 1320px;
     margin: 40px 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
 
@@ -147,4 +151,5 @@ body {
 
   footer {
     color: #bb83bb;
+    margin-top: 40px;
   }
