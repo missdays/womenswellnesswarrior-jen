@@ -1,3 +1,6 @@
+/* Variables */
+/* these root colours make the process of coding quicker, example : "background: --base;" instead of typing out the full code*/
+
 :root{
     --base : #fffbf6;
     --light_pink: #FDE3E5;
@@ -5,7 +8,18 @@
     --bright_pink: #f272b8;
     --purple:#bb83bb;
 }
-/* these root colours make the process of coding quicker, example : "background: --base;" instead of typing out the full code*/
+
+
+/* Reset */
+
+/* background image applied */
+body {
+  background-image: url(assets/Free-pink-gradient-aesthetic-background-from-Fotor.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
 
 /* background image applied */
 body {
@@ -59,6 +73,7 @@ body {
     width: 100%; 
     justify-content: center;
   }
+
 *,
 *::before,
 *::after {
@@ -66,6 +81,8 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Typography */
 
 h1, h2, h3 {
     font-family: "Libre Caslon Text", serif;
@@ -78,21 +95,262 @@ p {
 }
 
 .background {
-    background-image: url("./assets/Free-pink-gradient-aesthetic-background-from-Fotor.webp");
+    /*background-image: url("./assets/Free-pink-gradient-aesthetic-background-from-Fotor.webp");*/
+    background-image: url("assets/background2.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 100%; 
 }
+/* Navbar Styling */
+.navbar-custom {
+    background-color: --light_pink;
+    width: 100%; 
+    height: 100px;
+  }
 
-.logo {
-    width: 10rem;
-    filter: drop-shadow(0 0.1rem 1.5rem var(--base));
-}
-
+  
 .word-logo {
-    width: 10rem;
-    filter: drop-shadow(0 0.1rem 0.9rem var(--base));
+  max-width:150px;
+}
+  
+  .navbar-custom .navbar-brand {
+    color: var(--medium_pink); 
+    font-size: 24px;
+  }
+  
+  .navbar-custom .navbar-brand img {
+    width: 150px;
+    height: auto;
+  }
+
+  .navbar-custom .navbar-nav .nav-link {
+    color: var(--medium_pink); 
+    margin: 0 50px; 
+    font-size: 30px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: var(--bright_pink);
+  }
+  
+  .navbar-custom .navbar-nav .nav-link.active {
+    color: var(--base); 
+  }
+  
+  .navbar-custom .navbar-toggler-icon {
+    background-color: var(var(--purple));
+  }
+  
+  /* Centering Navbar Links */
+  .navbar-custom .navbar-nav {
+    width: 100%; 
+    justify-content: center;
+  }
+/* ----------------------------------------- index.html */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    opacity: 1; 
+}
+
+.wrapper {  
+    max-width: 900px;
+    margin: 40px 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    /* For Safari (unprefixed version is not yet supported) */
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  @media only screen and (max-width: 630px) {
+    .wrapper {
+      margin: 20px 10px 0 10px;
+    }
+ }
+
+  main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
+ }
+
+ @media only screen and (max-width: 630px) {
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+ }
+
+ .mock-up-image {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    height: 500px;
+    max-width:400px;
+    border-radius:24px;
+    margin-left:auto;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    color: var(--bright_pink)
+  }
+
+.start-button {
+    margin-top: 20px;
+    border-radius: 25px;
+    width: 200px;
+    height: 56px;
+    border: none;
+    color: #bb83bb;
+    font-size: 18px;
+    background-color: #FDE3E5;
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.2586);
+}
+
+.start-button:hover {
+    background-color: var(--medium_pink);
+    color: white;
+  }
+
+  footer {
+    color: white;
+    margin-top: 40px;
+    display: flex;
+    position:fixed;
+    bottom:0px;
+  }
+                                      /* Form and Calendar styles */
+
+/* This class is called to hide or unhide various sections*/
+.hide {
+  display: none;
+}
+
+/*  Form styles */
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: #fde3e5;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+#calendar {
+  margin: 20px 0;
+}
+
+.inputs {
+  margin-top: 100px;
+}
+
+.input-fields {
+  margin: 20px 0;
+  border: none;
+}
+
+.my-btn {
+  margin-top: 20px;
+  background-color: transparent;
+  color: #fffbf6;
+  border-color: #fffbf6;
+}
+
+.btn:hover {
+  color: #fffbf6;
+  background-color: #bb83bb;
+  border-color: #bb83bb;
+  font-weight: bold;
+}
+
+.info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list-group-item{
+  background-color: transparent;
+  border-bottom: none;
+  margin: 30px 0;
+}
+
+.list-group-flush {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.circle-blue {
+  border-color: lightblue;
+  background-color: lightblue;
+}
+
+.circle-red {
+  border-color: lightcoral;
+  background-color: lightcoral;
+}
+
+.circle-green {
+  border-color: lightgreen;
+  background-color: lightgreen;
+}
+.circle-purple {
+  border-color: #bb83bb;
+  background-color: #bb83bb;
+}
+
+/* Calendar styles */
+
+.fc-theme-standard td {
+  background-color: #fffbf6;
+}
+
+.fc-theme-standard th {
+  background-color: #bb83bb;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: #fffbf6;
+}
+
+.fc .fc-daygrid-day-number {
+  color: #bb83bb;
+}
+
+.fc .fc-button-primary {
+  background-color: transparent;
+}
+
+.fc .fc-multimonth-title {
+  color: #bb83bb;
 }
 
                                       /* Form and Calendar styles */
