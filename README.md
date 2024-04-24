@@ -6,6 +6,11 @@ Our app, 'Dot.' created for the CodeInstitute Women's Wellness hybrid hackathon
 
 Due to time constraints, not all of our planned features could make into the final app. Had we had more time, these features could have been added to improve the app
 
+### Bugs 
+
+- Background colour
+- git troubles
+
 ### Tools Used
 
 [Sweet Alert](https://sweetalert2.github.io/)
