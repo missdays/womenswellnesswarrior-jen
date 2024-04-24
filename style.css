@@ -31,11 +31,12 @@ p {
 }
 
 .background {
-    background-image: url("./assets/Free-pink-gradient-aesthetic-background-from-Fotor.webp");
+    /*background-image: url("./assets/Free-pink-gradient-aesthetic-background-from-Fotor.webp");*/
+    background-image: url("assets/background2.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 100%; 
 }
 /* Navbar Styling */
 .navbar-custom {
@@ -93,19 +94,27 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    opacity: 1; 
 }
 
 .wrapper {  
-    max-width: 1320px;
+    max-width: 900px;
     margin: 40px 80px 0 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    /* For Safari (unprefixed version is not yet supported) */
+    -webkit-backdrop-filter: blur(6px);
   }
 
-.logo {
-    width: 200px;
-    margin-bottom:40px;
+  @media only screen and (max-width: 630px) {
+    .wrapper {
+      margin: 20px 10px 0 10px;
+    }
  }
 
   main {
@@ -114,7 +123,7 @@ body {
     gap: 35px;
  }
 
- @media only screen and (max-width: 375px) {
+ @media only screen and (max-width: 630px) {
     main {
       display: flex;
       flex-direction: column;
@@ -124,25 +133,24 @@ body {
 
  .mock-up-image {
     width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    height: 500px;
+    max-width:400px;
+    border-radius:24px;
+    margin-left:auto;
   }
 
   .text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 40px;
     color: var(--bright_pink)
   }
 
-  .text-box {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
-    color: var(--bright_pink); /* Pink text color */
-  }
-
 .start-button {
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 25px;
     width: 200px;
     height: 56px;
@@ -159,6 +167,9 @@ body {
   }
 
   footer {
-    color: #bb83bb;
+    color: white;
     margin-top: 40px;
+    display: flex;
+    position:fixed;
+    bottom:0px;
   }
