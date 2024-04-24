@@ -9,7 +9,62 @@
     --purple:#bb83bb;
 }
 
+
 /* Reset */
+
+/* background image applied */
+body {
+  background-image: url(assets/Free-pink-gradient-aesthetic-background-from-Fotor.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar-custom {
+    background-color: --light_pink;
+    width: 100%; 
+    height: 100px;
+  }
+  
+  .navbar-custom .navbar-brand {
+    color: #FD9CC4; 
+    font-size: 24px;
+  }
+  
+  .navbar-custom .navbar-brand img {
+    width: 150px;
+    height: auto;
+  }
+
+  .navbar-custom .navbar-nav .nav-link {
+    color: #FD9CC4; 
+    margin: 0 50px; 
+    font-size: 30px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #F272B8;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link.active {
+    color: #FFFBF6; 
+  }
+  
+  .navbar-custom .navbar-toggler-icon {
+    background-color: #BB38BB;
+  }
+  
+  /* Centering Navbar Links */
+  .navbar-custom .navbar-nav {
+    width: 100%; 
+    justify-content: center;
+  }
+
 *,
 *::before,
 *::after {
@@ -173,3 +228,119 @@ body {
     position:fixed;
     bottom:0px;
   }
+                                      /* Form and Calendar styles */
+
+/* This class is called to hide or unhide various sections*/
+.hide {
+  display: none;
+}
+
+/*  Form styles */
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: #fde3e5;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+#calendar {
+  margin: 20px 0;
+}
+
+.inputs {
+  margin-top: 100px;
+}
+
+.input-fields {
+  margin: 20px 0;
+  border: none;
+}
+
+.my-btn {
+  margin-top: 20px;
+  background-color: transparent;
+  color: #fffbf6;
+  border-color: #fffbf6;
+}
+
+.btn:hover {
+  color: #fffbf6;
+  background-color: #bb83bb;
+  border-color: #bb83bb;
+  font-weight: bold;
+}
+
+.info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list-group-item{
+  background-color: transparent;
+  border-bottom: none;
+  margin: 30px 0;
+}
+
+.list-group-flush {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.circle-blue {
+  border-color: lightblue;
+  background-color: lightblue;
+}
+
+.circle-red {
+  border-color: lightcoral;
+  background-color: lightcoral;
+}
+
+.circle-green {
+  border-color: lightgreen;
+  background-color: lightgreen;
+}
+.circle-purple {
+  border-color: #bb83bb;
+  background-color: #bb83bb;
+}
+
+/* Calendar styles */
+
+.fc-theme-standard td {
+  background-color: #fffbf6;
+}
+
+.fc-theme-standard th {
+  background-color: #bb83bb;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: #fffbf6;
+}
+
+.fc .fc-daygrid-day-number {
+  color: #bb83bb;
+}
+
+.fc .fc-button-primary {
+  background-color: transparent;
+}
+
+.fc .fc-multimonth-title {
+  color: #bb83bb;
+}
+
