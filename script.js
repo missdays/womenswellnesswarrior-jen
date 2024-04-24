@@ -26,3 +26,13 @@ const userPeriodLength = JSON.parse(
 const userCycleLength = JSON.parse(
   localStorage.getItem("userData")
 ).cycleLength;
+
+//changing data types
+const currentDate = new Date();
+const userPeriodStage = userPeriodStartDate - currentDate;
+
+// use user data on the calender
+switch(userPeriodStartDate){
+    case(userPeriodStartDate > 5):
+        break;
+}
