@@ -1,5 +1,4 @@
 {
-    "day": "",
     "phase": "period",
     "description" : "",
     "symptoms": "Expected symptoms include menstrual cramps, fatigue, and mood swings.",
@@ -11,7 +10,6 @@
     }
 },
 {
-    "day": "",
     "phase": "Follicular Phase",
     "description" : "This phase starts after your period ends and lasts until ovulation. You may feel more energetic and experience a rise in libido.",
     "symptoms": "Expected symptoms include Increased energy levels, heightened libido and lighter vaginal discharge.",
@@ -22,7 +20,6 @@
     }
 },
 {
-    "day": "",
     "phase": "Ovulation Phase",
     "description" : "This phase typically occurs around mid-cycle and marks the release of an egg from the ovary. You may experience heightened fertility during this time.",
     "symptoms": "Expected symptoms include: an increased libido, changes in cervical mucus consistency and, mild pelvic discomfort.",
@@ -33,7 +30,6 @@
     }
 },
 {
-    "day": "",
     "phase": "Luteal Phase",
     "description" : "This phase occurs after ovulation and lasts until the start of your next period. You may experience PMS symptoms during this time.",
     "symptoms": "Breast tenderness, Mood swings, Bloating",
