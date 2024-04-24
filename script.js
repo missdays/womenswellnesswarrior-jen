@@ -1,31 +1,25 @@
-// Compulsory user inputs: name, period start date
+// const userData = {
+//   name: "",
+//   periodStartDate: "",
+//   periodLength: "",
+//   cycleLength: "",
+// };
 
-// If period length undefined, default to 5 days
-// If cycle length undefined, default to 28 days
-
-// Create object to store user data
-const userData = {
-  name: "",
-  periodStartDate: "",
-  periodLength: "",
-  cycleLength: "",
-};
-
-// Serialize object to put into localStorage
-const userDataSerialized = JSON.stringify(userData);
-// Store in localStorage
-localStorage.setItem("userData", userDataSerialized);
-// Retrieve from localStorage
-const userName = JSON.parse(localStorage.getItem("userData")).name;
-const userPeriodStartDate = JSON.parse(
-  localStorage.getItem("userData")
-).periodStartDate;
-const userPeriodLength = JSON.parse(
-  localStorage.getItem("userData")
-).periodLength;
-const userCycleLength = JSON.parse(
-  localStorage.getItem("userData")
-).cycleLength;
+// // Serialize object to put into localStorage
+// const userDataSerialized = JSON.stringify(userData);
+// // Store in localStorage
+// localStorage.setItem("userData", userDataSerialized);
+// // Retrieve from localStorage
+// const userName = JSON.parse(localStorage.getItem("userData")).name;
+// const userPeriodStartDate = JSON.parse(
+//   localStorage.getItem("userData")
+// ).periodStartDate;
+// const userPeriodLength = JSON.parse(
+//   localStorage.getItem("userData")
+// ).periodLength;
+// const userCycleLength = JSON.parse(
+//   localStorage.getItem("userData")
+// ).cycleLength;
 
 //Variables
 let ButtonToYear = document.getElementById('change-year')
@@ -107,16 +101,7 @@ function GetValues() {
 };*/
 
 
-//Variables
-let ButtonToYear = document.getElementById('change-year')
-let ButtonToMonth = document.getElementById('change-month')
-let StartCalculation = document.getElementById('start-button')
-let StartDate = document.getElementById('start-date')
-let PeriodTime = document.getElementById('period-time')
-let Cycle = document.getElementById('cycle')
-let CalendarSection = document.getElementById('calendar-section')
-let FormSection = document.getElementById('form-section')
-let EditPeriod = document.getElementById('edit-period')
+
 
 //Event listeners
 StartCalculation.addEventListener('click', showCalendar);
@@ -124,9 +109,11 @@ ButtonToYear.addEventListener('click', changeToYear);
 ButtonToMonth.addEventListener('click', ChangeToMonth);
 EditPeriod.addEventListener('click', showForm);
 
+
 /** 
  * When page loads the form inputs are displayed
 */
+
 window.onload = showForm();
 
 function showForm() {
@@ -184,15 +171,8 @@ function GetValues() {
         ]
       });
       calendar.render();
+
 };*/
 
 
-//changing data types
-const currentDate = new Date();
-const userPeriodStage = userPeriodStartDate - currentDate;
 
-// use user data on the calender
-switch(userPeriodStartDate){
-    case(userPeriodStartDate > 5):
-        break;
-}

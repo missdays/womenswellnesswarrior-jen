@@ -16,4 +16,4 @@ Due to time constraints, not all of our planned features could make into the fin
 [FullCalendar](https://fullcalendar.io/)
 
 
-x
+npm install fullcalendar
