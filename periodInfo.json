@@ -1,0 +1,45 @@
+{
+    "day": "",
+    "phase": "period",
+    "description" : "",
+    "symptoms": "Expected symptoms include menstrual cramps, fatigue, and mood swings.",
+    "advice": "During this phase, you may experience bleeding and discomfort. Prioritise self-care and manage discomfort with pain relief.",
+    "period products used": "",
+    "helpful links": {
+        "1": "https://www.healthline.com/health/womens-health/how-to-stop-menstrual-cramps",
+        "2": "https://www.everydayhealth.com/wellness/self-care-during-your-period/"
+    }
+},
+{
+    "day": "",
+    "phase": "Follicular Phase",
+    "description" : "This phase starts after your period ends and lasts until ovulation. You may feel more energetic and experience a rise in libido.",
+    "symptoms": "Expected symptoms include Increased energy levels, heightened libido and lighter vaginal discharge.",
+    "advice": "Focus on nutrient-rich foods, engage in moderate-intensity exercises. Prioritise adequate sleep and consider tracking your fertility if trying to conceive.",
+    "helpful links": {
+        "1": "https://www.plannedparenthood.org/learn/birth-control/fertility-awareness",
+        "2": "https://www.thewomens.org.au/health-information/periods/healthy-periods/exercise-diet-periods"
+    }
+},
+{
+    "day": "",
+    "phase": "Ovulation Phase",
+    "description" : "This phase typically occurs around mid-cycle and marks the release of an egg from the ovary. You may experience heightened fertility during this time.",
+    "symptoms": "Expected symptoms include: an increased libido, changes in cervical mucus consistency and, mild pelvic discomfort.",
+    "advice": "Consider using protection if not trying to conceive. Monitor ovulation signs like changes in cervical mucus, or abdominal pain. Engage in intimacy if trying to conceive. Stay relaxed and stress-free..",
+    "helpful links": {
+        "1": "https://www.thebump.com/a/ovulation-symptoms-signs-of-ovulation",
+        "2": "https://www.mayoclinic.org/healthy-lifestyle/getting-pregnant/in-depth/fertility/art-20047584"
+    }
+},
+{
+    "day": "",
+    "phase": "Luteal Phase",
+    "description" : "This phase occurs after ovulation and lasts until the start of your next period. You may experience PMS symptoms during this time.",
+    "symptoms": "Breast tenderness, Mood swings, Bloating",
+    "advice": "Pms or Pmdd symptoms can cause anxiety and concern, practice stress-relief techniques like meditation or yoga. Maintain a balanced diet with calcium rich foods and drink plenty of water. Monitor mood changes and seek support if needed.",
+    "helpful links": {
+        "1": "https://www.nhs.uk/conditions/pre-menstrual-syndrome/",
+        "2": "https://www.webmd.com/women/pms/features/diet-and-pms"
+    }
+}
