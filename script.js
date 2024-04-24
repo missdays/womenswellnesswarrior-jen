@@ -1,4 +1,5 @@
 // Compulsory user inputs: name, period start date
+
 // If period length undefined, default to 5 days
 // If cycle length undefined, default to 28 days
 
