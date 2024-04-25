@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Stay ahead of your cycle with Dot. ">
-
-    <title>Dot.</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/webclip.png"> 
+    <meta name="description" content="Stay ahead of your cycle with dot. " />
+    <title>dot.</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/webclip.png" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="navbar.css" />
+    <script src="script.js" defer></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +24,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Font Awesome -->
     <script
@@ -31,71 +36,90 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  
+
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-      <div class="container-fluid">
-
+    <div class="background">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
         <!-- Toggle Button for Mobile View -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <!-- Navbar Items -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <!-- Period Start Tab -->
-            <li class="nav-item track-period">
-              <a class="nav-link" href="/formw.html">Track Period</a>
-            </li>
-              <!-- Logo -->
+            <!-- Logo -->
             <li class="nav-item logo-container">
               <a class="navbar-brand" href="/index.html">
-                <img src="/docs/Group 55.png" width="60" height="60" class="d-inline-block align-top" alt="Logo" loading="lazy">
+                <img
+                  src="/docs/Group 55.png"
+                  width="60"
+                  height="60"
+                  class="d-inline-block align-top"
+                  alt="Logo"
+                  loading="lazy"
+                />
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/form.html">Your DOT.</a>
+            <!-- Period Start Tab -->
+            <li class="nav-item track-period">
+              <a class="nav-link" href="/formw.html">track period</a>
             </li>
+            <!-- Your dot. Tab -->
             <li class="nav-item">
-              <a class="nav-link" href="">About Us</a>
+              <a class="nav-link" href="/formw.html">Your DOT.</a>
+            </li>
+            <!-- About Us Tab -->
+            <li class="nav-item">
+              <a class="nav-link" href="">about us</a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-    <div class="wrapper">
-      <main>
-        <div class="mockup">
-          <img class="mock-up-image" src="assets/mockup-placeholder.webp" alt="Mockup showing various components of the web app">
-        </div>
-        <div class="text">
-          <div class="text-box">
-            <div class="heading-wrapper">
-              <h1>Dot.</h1>
+      </nav>
+      <div class="wrapper">
+        <div class="main-wrapper">
+          <main>
+            <div class="mockup">
+              <img
+                class="mock-up-image"
+                src="assets/mockup-placeholder.webp"
+                alt="Mockup showing various components of the web app"
+              />
             </div>
-              <div class="feature-box">
-                <p>Predict Symptoms and Stay Prepared</p>
+            <div class="text">
+              <div class="text-box">
+                <div class="heading-wrapper">
+                  <h1>Dot.</h1>
+                </div>
+                <div class="feature-box">
+                  <p>Predict Symptoms and Stay Prepared</p>
+                </div>
+                <div class="feature-box">
+                  <p>Understand Your Cycle and Health</p>
+                </div>
+                <div class="feature-box">
+                  <p>Intuitive tools to beginning tracking</p>
+                </div>
+                <div class="feature-box">
+                  <p>Get Started Today!</p>
+                </div>
+                <button class="start-button">Start</button>
               </div>
-              <div class="feature-box">
-                <p>Understand Your Cycle and Health</p>
-              </div>
-              <div class="feature-box">
-                <p>Intuitive tools to beginning tracking</p>
-              </div>
-              <div class="feature-box">
-                <p>Get Started Today!</p>
-              </div>
-            <button class="start-button">Start</button>
-          </div>
-        </div> 
-      </main>
+            </div>
+          </main>
+        </div>
+      </div>
+      <footer>
+        <p>Women's wellness Warriors</p>
+      </footer>
     </div>
-    <footer>
-      <p>Women's wellness Warriors</p>
-    </footer>
   </body>
 </html>
-  
- 
