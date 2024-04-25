@@ -15,64 +15,68 @@
 <body>
 
   <section id="form-section">
-    <div class="container-fluid text-center inputs">
-      <div class="row g-3">
-        <div class="col-md">
-          <label for="user-name">Name</label>
-          <input id="user-name" name="user-name" type="text" class="form-control input-fields"
-            placeholder="First Name" aria-label="user-name" required>
+    <div class="body-div">
+      <div class="container-fluid text-center inputs">
+        <div class="row g-3">
+          <div class="col-md">
+            <label for="user-name" class="labels">Name</label>
+            <input id="user-name" name="user-name" type="text" class="form-control input-fields"
+              placeholder="First Name" aria-label="user-name" required>
+          </div>
+          <div class="col-md">
+            <label for="start-date" class="labels">When did your last period start?</label>
+            <input id="start-date" name="start-date" type="date" class="form-control input-fields"
+              placeholder="dd/mm/yyyy" aria-label="start-date" required>
+          </div>
+          <div class="col-md">
+            <label for="period-time" class="labels">How many days does your period usually last?</label>
+            <input id="period-time" name="period-time" type="number" class="form-control input-fields" placeholder="5"
+              aria-label="period-time">
+          </div>
+          <div class="col-md">
+            <label for="cycle" class="labels">How many days is your cycle?</label>
+            <input id="cycle" name="cycle" type="number" class="form-control input-fields" placeholder="28"
+              aria-label="cycle">
+          </div>
         </div>
-        <div class="col-md">
-          <label for="start-date">When did your last period start?</label>
-          <input id="start-date" name="start-date" type="date" class="form-control input-fields"
-            placeholder="dd/mm/yyyy" aria-label="start-date" required>
-        </div>
-        <div class="col-md">
-          <label for="period-time">How many days does your period usually last?</label>
-          <input id="period-time" name="period-time" type="number" class="form-control input-fields" placeholder="5"
-            aria-label="period-time">
-        </div>
-        <div class="col-md">
-          <label for="cycle">How many days is your cycle?</label>
-          <input id="cycle" name="cycle" type="number" class="form-control input-fields" placeholder="28"
-            aria-label="cycle">
-        </div>
-      </div>
 
-      <button href="index.html" class="btn btn-success my-btn" type="button" id="start-button"
-        title="start button">Start</button>
+        <button href="index.html" class="btn btn-success my-btn" type="button" id="start-button"
+          title="start button">Start</button>
+      </div>
     </div>
   </section>
 
   <section id="calendar-section">
-    <h2>My calendar</h2>
+    <div class="body-div">
+      <h2>My calendar</h2>
 
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col-sm-8">
-          <span>
-            <button class="btn btn-success my-btn" type="button" id="change-year" title="Year/Month">Year</button>
-            <button class="btn btn-success my-btn" type="button" id="change-month" title="Year/Month">Month</button>
-          </span>
-          <div id='calendar'></div>
-        </div>
-        <div class="col-sm-4 info-div">
-          <button class="btn btn-success my-btn" type="button" id="edit-period" title="Year/Month">Edit
-            Period</button>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div class="circle circle-blue"></div>Pre-period
-            </li>
-            <li class="list-group-item">
-              <div class="circle circle-red"></div>Period
-            </li>
-            <li class="list-group-item">
-              <div class="circle circle-green"></div>Post-period
-            </li>
-            <li class="list-group-item">
-              <div class="circle circle-purple"></div>Peak ovulation
-            </li>
-          </ul>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-sm-8">
+            <!-- <span>
+              <button class="btn btn-success my-btn" type="button" id="change-year" title="Year/Month">Year</button>
+              <button class="btn btn-success my-btn" type="button" id="change-month" title="Year/Month">Month</button>
+            </span> -->
+            <div id='calendar'></div>
+          </div>
+          <div class="col-sm-4 info-div">
+            <button class="btn btn-success my-btn" type="button" id="edit-period" title="Year/Month">Edit
+              Period</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="circle circle-blue"></div>Pre-period
+              </li>
+              <li class="list-group-item">
+                <div class="circle circle-red"></div>Period
+              </li>
+              <li class="list-group-item">
+                <div class="circle circle-green"></div>Post-period
+              </li>
+              <li class="list-group-item">
+                <div class="circle circle-purple"></div>Peak ovulation
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

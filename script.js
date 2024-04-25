@@ -1,8 +1,8 @@
 const userData = {
-  name: "",
-  periodStartDate: "",
-  periodLength: "",
-  cycleLength: "",
+    name: "",
+    periodStartDate: "",
+    periodLength: "",
+    cycleLength: "",
 };
 
 // Serialize object to put into localStorage
@@ -12,18 +12,18 @@ localStorage.setItem("userData", userDataSerialized);
 // Retrieve from localStorage
 const userName = JSON.parse(localStorage.getItem("userData")).name;
 const userPeriodStartDate = JSON.parse(
-  localStorage.getItem("userData")
+    localStorage.getItem("userData")
 ).periodStartDate;
 const userPeriodLength = JSON.parse(
-  localStorage.getItem("userData")
+    localStorage.getItem("userData")
 ).periodLength;
 const userCycleLength = JSON.parse(
-  localStorage.getItem("userData")
+    localStorage.getItem("userData")
 ).cycleLength;
 
 //Variables
-let ButtonToYear = document.getElementById('change-year')
-let ButtonToMonth = document.getElementById('change-month')
+// let ButtonToYear = document.getElementById('change-year')
+// let ButtonToMonth = document.getElementById('change-month')
 let StartCalculation = document.getElementById('start-button')
 let StartDate = document.getElementById('start-date')
 let PeriodTime = document.getElementById('period-time')
@@ -35,8 +35,8 @@ let UserName = document.getElementById('user-name')
 
 //Event listeners
 StartCalculation.addEventListener('click', showCalendar);
-ButtonToYear.addEventListener('click', changeToYear);
-ButtonToMonth.addEventListener('click', ChangeToMonth);
+// ButtonToYear.addEventListener('click', changeToYear);
+// ButtonToMonth.addEventListener('click', ChangeToMonth);
 EditPeriod.addEventListener('click', showForm);
 
 /** 
@@ -54,24 +54,63 @@ function showCalendar() {
     CalendarSection.classList.remove('hide')
 
     GetData();
-    ChangeToMonth();
+    CalculatePeriod();
 };
 
-function ChangeToMonth() {
+function CalculatePeriod() {
+
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
+        timeZone: 'local',
         initialView: 'dayGridMonth',
+        height: 400,
+        headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,multiMonthYear'
+        },
+        events: [
+            {
+                title: 'Period',
+                start: '2024-04-04',
+                end: '2024-04-09',
+                // display: 'background',
+                color: 'lightcoral',
+                textColor: 'black',
+            },
+            {
+                title: 'Pre-Period',
+                start: '2024-04-02',
+                end: '2024-04-04',
+                display: 'background',
+                color: 'lightblue',
+            },
+            {
+                title: 'Post-Period',
+                start: '2024-04-09',
+                end: '2024-04-016',
+                display: 'background',
+                color: 'lightgreen',
+            },
+            {
+                title: 'Peak Ovulation',
+                start: '2024-04-17',
+                end: '2024-04-19',
+                display: 'background',
+                color: '#bb83bb',
+            }
+        ],
     });
     calendar.render();
 };
 
-function changeToYear() {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'multiMonthYear',
-    });
-    calendar.render();
-};
+// function changeToYear() {
+//     var calendarEl = document.getElementById('calendar');
+//     var calendar = new FullCalendar.Calendar(calendarEl, {
+//         initialView: 'multiMonthYear',
+//     });
+//     calendar.render();
+// };
 
 function GetData() {
     const userData = {
@@ -80,25 +119,21 @@ function GetData() {
         periodLength: PeriodTime.value,
         cycleLength: Cycle.value
     };
-
-    ShowEvents(userData);
     console.log(userData);
 };
 
-function ShowEvents(values) {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        events: [
-          {
-            title  : 'Period',
-            start  : '2024-04-20'
-          }
-        ],
-        display: 'background',
-        backgroundColor: 'red'
-      });
-      calendar.render();
-};
+// function ShowEvents(values) {
+//     var calendarEl = document.getElementById('calendar');
+//     var calendar = new FullCalendar.Calendar(calendarEl, {
+//         initialView: 'dayGridMonth',
+//         events: [
+//           {
+//             title: 'Check',
+//             start: '2024-04-10',
+//           }
+//         ]
+//       });
+//       calendar.render();
+// };
 
 
