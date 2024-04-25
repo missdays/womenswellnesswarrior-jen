@@ -35,9 +35,9 @@ let UserName = document.getElementById('user-name')
 
 //Event listeners
 StartCalculation.addEventListener('click', showCalendar);
+EditPeriod.addEventListener('click', showForm);
 // ButtonToYear.addEventListener('click', changeToYear);
 // ButtonToMonth.addEventListener('click', ChangeToMonth);
-EditPeriod.addEventListener('click', showForm);
 
 /** 
  * When page loads the form inputs are displayed
@@ -53,12 +53,27 @@ function showCalendar() {
     FormSection.classList.add('hide')
     CalendarSection.classList.remove('hide')
 
-    GetData();
+    //GetData();
     CalculatePeriod();
 };
 
 function CalculatePeriod() {
+//users data are stored in an object variable
+    const userData = {
+        name: UserName.value,
+        periodStartDate: StartDate.value,
+        periodLength: PeriodTime.value,
+        cycleLength: Cycle.value
+    };
 
+    periodEnd(userData);
+    prePeriod(userData);
+    postPeriod(endinng);
+    peakOvulation(endinng);
+
+/*
+*the code to show the calendar with the events
+*/
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
         timeZone: 'local',
@@ -72,37 +87,77 @@ function CalculatePeriod() {
         events: [
             {
                 title: 'Period',
-                start: '2024-04-04',
-                end: '2024-04-09',
+                start: userData.periodStartDate,
+                end: endinng,
                 // display: 'background',
                 color: 'lightcoral',
                 textColor: 'black',
             },
             {
                 title: 'Pre-Period',
-                start: '2024-04-02',
-                end: '2024-04-04',
-                display: 'background',
+                start: preStart,
+                end: preEnd,
+                //display: 'background',
                 color: 'lightblue',
+                textColor: 'black'
             },
             {
                 title: 'Post-Period',
-                start: '2024-04-09',
-                end: '2024-04-016',
-                display: 'background',
+                start: postStart,
+                end: postEnd,
+                //display: 'background',
                 color: 'lightgreen',
+                textColor: 'black'
             },
             {
                 title: 'Peak Ovulation',
-                start: '2024-04-17',
-                end: '2024-04-19',
-                display: 'background',
+                start: peakStart,
+                end: peakEnd,
+                //display: 'background',
                 color: '#bb83bb',
+                textColor: 'black'
             }
         ],
     });
     calendar.render();
+    console.log(userData);
 };
+
+function periodEnd(values) {
+    //To calculate the end date of the period
+    happening = new Date(values.periodStartDate);
+    endinng = happening.setDate(happening.getDate() + parseInt(values.periodLength));
+
+    return endinng;
+}
+
+function prePeriod(values) {
+    //To calculate the pre-period
+    pre = new Date(values.periodStartDate);
+    preEnd = pre.setDate(pre.getDate() - 1);
+    preStart = pre.setDate(pre.getDate() - 1);
+
+    return preStart, preEnd;
+}
+
+function postPeriod(endOfPeriod) {
+    //To calculate the post-period
+    post = new Date(endOfPeriod);
+    postStart = post.setDate(post.getDate() + 1);
+    postEnd = post.setDate(post.getDate() + 1);
+
+    return postStart, postEnd;
+}
+
+function peakOvulation(endOfPeriod) {
+    //To calculate the peak ovulation
+    peak = new Date(endOfPeriod);
+    peakStart = peak.setDate(peak.getDate() + 6);
+    peakEnd = peak.setDate(peak.getDate() + 5);
+
+    return peakStart, peakEnd;
+}
+
 
 // function changeToYear() {
 //     var calendarEl = document.getElementById('calendar');
@@ -111,29 +166,4 @@ function CalculatePeriod() {
 //     });
 //     calendar.render();
 // };
-
-function GetData() {
-    const userData = {
-        name: UserName.value,
-        periodStartDate: StartDate.value,
-        periodLength: PeriodTime.value,
-        cycleLength: Cycle.value
-    };
-    console.log(userData);
-};
-
-// function ShowEvents(values) {
-//     var calendarEl = document.getElementById('calendar');
-//     var calendar = new FullCalendar.Calendar(calendarEl, {
-//         initialView: 'dayGridMonth',
-//         events: [
-//           {
-//             title: 'Check',
-//             start: '2024-04-10',
-//           }
-//         ]
-//       });
-//       calendar.render();
-// };
-
 

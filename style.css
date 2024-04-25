@@ -71,7 +71,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 35px;
 }
 
@@ -101,6 +101,12 @@ main {
     margin-left:auto;
 }
 
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+
 .text {
     display: flex;
     flex-direction: column;
@@ -109,8 +115,14 @@ main {
     color: #894d84;
 }
 
+.feature-box {
+  border-radius: 11.803px;
+    background: #FFF;
+  padding: 6px 25.82px;
+
+}
+
 .start-button {
-    margin-top: 20px;
     border-radius: 10px;
     padding: 5px 33px 5px 33px;
     border: none;
@@ -148,7 +160,7 @@ footer {
 h2 {
   text-align: center;
   margin-top: 30px;
-  color: #fde3e5;
+  color: #FD9CC4;
   font-weight: bolder;
   font-style: italic;
 }
@@ -224,6 +236,10 @@ h2 {
 
 /* Calendar styles */
 
+#calendar {
+  margin-left: 20px;
+}
+
 .fc-theme-standard td {
   background-color: #fffbf6;
 }
@@ -247,7 +263,13 @@ h2 {
 .fc .fc-multimonth-title {
   color: #bb83bb;
 }
+.fc-event-time {
+  display: none;
+}
 
-#calendar {
-  margin: 20px 0;
+/* Media Queries */
+@media (max-width: 576px) {
+  #calendar {
+    margin: 0 15px;
+  }
 }
