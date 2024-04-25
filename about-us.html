@@ -3,8 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us</title>   
-        <!--<link href="style.css" rel="stylesheet" type="text/css"/>-->
+        <title>About Us</title>
 
         <style>
             /* Style background */
@@ -16,20 +15,32 @@
                 padding-top: 5%;
                 padding-bottom: 5%;
             }
+            .content {
+                position: relative;
+                width: 850;
+                height: 100%;
+                margin: 0 auto;
+            }
+            .page {
+                position: relative;
+                height: 100%;
+                z-index: 1;
+            }
             /* Style heading */
             h1 {
-                padding-bottom: 5%;
+                padding-bottom: 2%;
                 text-align: center;
                 font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 50px;
             }
             /* Style team summary */
             p {
-                text-align: justify;
                 font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 1.25vw;
             }
             /* Animation for when cursor hovers over GitHub link */
             .text-grow {
-                border: none;
+                border: hidden;
                 display: inline-flex;
                 text-align: center;
                 transition: all 0.2s ease-in-out;
@@ -39,14 +50,18 @@
             .text-grow:hover {
                 transform: scale(1.15);
             }
-            /* Style team view */
-            .view {
+            /* Style team card */
+            .card {
                 box-shadow: none;
                 margin: auto;
+                padding: none;
+                padding-left: 15%;
+                padding-right: 15%;
             }
-            /* Style boundary of team view */
-            .boundary {
+            .container {
                 padding: 0 16px;
+                border-style: hidden;
+                align-items: normal;
             }
             /* Style team title */
             .title {
@@ -57,21 +72,19 @@
             /* Style position of team photos in relation to summary text */
             .image-left {
                 float: left;
-                margin-right: 10px; 
-                text-align: start;
+                margin-right: 10px;
                 border-radius: 25%;
                 overflow: hidden;
-                width: 15%;
-                height: 15%;
+                width: 25%;
+                height: 25%;
             }
             .image-right {
                 float: right;
                 margin-left: 10px;
-                text-align: end;
                 border-radius: 25%;
                 overflow: hidden;
-                width: 15%;
-                height: 15%;
+                width: 25%;
+                height: 25%;
             }
             /* Reset area one image is placed */
             .clearfix::after {
@@ -89,33 +102,31 @@
 
     <body>
         <h1>Meet The Team</h1>
-       
-        <div class="view">
+        <div class="card">
             <img src="assets/Amy Photo.png" alt="Amy Lewis" class="image-left">
-            <div class="boundary clearfix">
+            <div class="container clearfix">
                 <h2>Amy Lewis <span class="title">(Junior Web Developer, Code Institute Alumnus)</span></h2>
                 <p>"I am a Junior Web Developer from London, and passionate about making websites that work well and look great!"</p>                    
                 <a href="https://github.com/alcl2000" target="_blank" alt="Link to Amy's GitHub" class="text-grow">Amy GitHub</a>
-                <a href="https://www.linkedin.com/in/amy555lewis/" target="_blank" alt="Link to Any's LinkedIn" class="text-grow">Amy LinkedIn</a>
+                <a href="https://www.linkedin.com/in/amy555lewis/" target="_blank" alt="Link to Amy's LinkedIn" class="text-grow">Amy LinkedIn</a>
             </div>
         </div>
 
-        <div class="view">
+        <div class="card">
             <img src="assets/Dan Photo.jpg" alt="Dan Morriss" class="image-right">
-            <div class="boundary clearfix">
+            <div class="container clearfix">
                 <h2>Dan Morriss <span class="title">(Web Developer, Code Institute Alumnus)</span></h2>
                 <p>"Hey, I'm Dan, a Full Stack Developer with a passion for problem-solving and continuous learning. My journey into the world of tech began after years as a touring musician and teacher, where I honed my skills in web development by crafting websites for bands and local businesses.
                     In 2023, I further solidified my expertise by completing a diploma in Full Stack Software Development with The Code Institute. 
                     This comprehensive program equipped me with the technical skills to build dynamic, scalable websites while leveraging my background in creativity and adaptability."</p>                    
                 <a href="https://github.com/DanMorriss/" target="_blank" alt="Link to Dan's GitHub" class="text-grow">Dan GitHub</a>
                 <a href="https://www.linkedin.com/in/morrissdaniel/" target="_blank" alt="Link to Dan's LinkedIn" class="text-grow">Dan LinkedIn</a>
-                <a href="https://www.danmorriss.dev/" target="_blank" alt="Link to Dan's Portfolio" class="text-grow">Dan Portfolio</a>
             </div>
         </div>
 
-        <div class="view">
+        <div class="card">
             <img src="assets/Bola Photo.JPEG" alt="Bola Akinmarin" class="image-left">
-            <div class="boundary clearfix">
+            <div class="container clearfix">
                 <h2>Bola Akinmarin <span class="title">(Human Resources Consultant, Full Stack Software Development Student at Code Institute)</span></h2>
                 <p>"I am what you might call a boomerang coder. I have a BEng in Computer Engineering but spent the last decade practicsing as a Human Resources Professional. 
                     I enrolled in Code Institute's Full Stack Software Developer course a little over a month ago and determined to change the world one code at a time!"</p>                    
@@ -124,9 +135,9 @@
             </div>
         </div>
 
-        <div class="view">
+        <div class="card">
             <img src="assets/Dyeneffer Photo.jpg" alt="Dyeneffer Dias" class="image-right">
-            <div class="boundary clearfix">
+            <div class="container clearfix">
                 <h2>Dyeneffer Dias <span class="title">(Interpreter, Full Stack Software Developer Student at Code Institute)</span></h2>
                 <p>"I'm currently pursuing my Full Stack Software Developer diploma while working as a Consecutive and Over-the-Phone interpreter for over a decade. 
                     Off the clock, you'll find me enjoying quality time with family, doing community volunteer work, and in nature."</p>                    
@@ -135,9 +146,9 @@
             </div>
         </div>
 
-        <div class="view">
+        <div class="card">
             <img src="assets/Charlie Photo.jpeg" alt="Charlie's Photo" class="image-left">
-            <div class="boundary clearfix">
+            <div class="container clearfix">
                 <h2>Charlie Enright <span class="title">(Archaeologist, Web Development Student at Code Institute)</span></h2>
                 <p>“By day, I am an archaeologist specialising in aerial surveys and 3D modeling, passionate about uncovering the past. 
                     I am driven by innovative ways to engage wider audiences. Outside of work, I am pursuing a diploma in web application development at the Code Institute.”</p>                    
@@ -146,9 +157,9 @@
             </div>
         </div>
 
-        <div class="view">
+        <div class="card">
             <img src="" alt="Andreas Parides" class="image-right">
-            <div class="boundary clearfix">
+            <div class="container clearfix">
                 <h2>Andreas Parides <span class="title">(Andreas title here)</span></h2>
                 <p>"Andreas intro here"</p>                    
                 <a href="" target="_blank" alt="Link to Andreas's GitHub" class="text-grow">Andreas GitHub</a>
@@ -156,13 +167,14 @@
             </div>
         </div>
 
-        <div class="view">
+        <div class="card">
             <img src="assets/Adam Photo.jpg" alt="Adam Kestell" class="image-left">
-            <div class="boundary clearfix">
+            <div class="container clearfix">
                 <h2>Adam Kestell <span class="title">(Full Stack Software Developer Student, Education Advisor at Code Institute)</span></h2>
-                <p>"Adam intro here"</p>                    
-                <a href="" target="_blank" alt="Link to Adam's GitHub" class="text-grow">Adam GitHub</a>
-                <a href="" target="_blank" alt="Link to Adam's LinkedIn" class="text-grow">Adam LinkedIn</a>
+                <p>"By day I'm an Education Advisor who helps students in sstarting their journey of becoming a Software Developer. 
+                    By night I'm working through the Full Stack Course to get a students perspective of the course. Other than that I'm a music lover and a massive sports fan."</p>                    
+                <a href="https://github.com/AKestell" target="_blank" alt="Link to Adam's GitHub" class="text-grow">Adam GitHub</a>
+                <a href="https://www.linkedin.com/in/adam-kestell/" target="_blank" alt="Link to Adam's LinkedIn" class="text-grow">Adam LinkedIn</a>
             </div>
         </div>
     </body>
