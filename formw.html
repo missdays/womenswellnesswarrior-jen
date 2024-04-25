@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dot.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="formw-style.css" />
+    <script src="script.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/076967cb18.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <div class="container-fluid">
+
+        <!-- Toggle Button for Mobile View -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- Period Start Tab -->
+            <li class="nav-item track-period">
+              <a class="nav-link" href="/formw.html">Track Period</a>
+            </li>
+              <!-- Logo -->
+            <li class="nav-item logo-container">
+              <a class="navbar-brand" href="/index.html">
+                <img src="/docs/Group 55.png" width="60" height="60" class="d-inline-block align-top" alt="Logo" loading="lazy">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/form.html">Your DOT.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+    <div class="background">
+      <div class="container">
+        <!-- Name card -->
+        <div class="form-card" id="name-card">
+          <div class="card-body">
+            <label class="form-label" for="users-name"
+              >What would you like to be called?</label
+            >
+            <input
+              id="users-name"
+              name="users-name"
+              type="text"
+              class="form-control input-fields"
+              placeholder="name"
+              aria-label="user-name"
+              required
+            />
+            <button id="name-button" class="submit-button">Submit</button>
+          </div>
+        </div>
+
+        <!-- Period start date card -->
+        <div class="hide form-card" id="period-start-date-card">
+          <div class="card-body">
+            <label class="form-label" for="period-start-date"
+              >When did your last period start?</label
+            >
+            <input
+              id="period-start-date"
+              name="period-start-date"
+              type="date"
+              class="form-control input-fields"
+              placeholder=""
+              aria-label="period-start-date"
+              required
+            />
+            <button id="period-start-date-button" class="submit-button">
+              Next
+            </button>
+          </div>
+        </div>
+
+        <!-- Period length card -->
+        <div class="hide form-card" id="period-length-card">
+          <div class="card-body">
+            <label class="form-label" for="period-length"
+              >How many days does your period usually last?</label
+            >
+            <input
+              id="period-length"
+              name="period-length"
+              type="number"
+              class="form-control input-fields"
+              placeholder="5"
+              aria-label="period-length"
+              required
+            />
+            <button id="period-length-button" class="submit-button">
+              Next
+            </button>
+          </div>
+        </div>
+
+        <!-- Cycle length card -->
+        <div class="hide form-card" id="cycle-length-card">
+          <div class="card-body">
+            <label class="form-label" for="cycle-length"
+              >How many days does your cycle usually last?</label
+            >
+            <input
+              id="cycle-length"
+              name="cycle-length"
+              type="number"
+              class="form-control input-fields"
+              placeholder="28"
+              aria-label="cycle-length"
+              required
+            />
+            <button id="cycle-length-button" class="submit-button">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <p>Women's Wellness Warriors</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="formw-script.js"></script>
+</html>

@@ -12,11 +12,9 @@
 
 /* Reset */
 
-
-
 /* Navbar Styling */
 .navbar-custom {
-    background-color: --light_pink;
+    background-color: #FDE3E5;
     width: 100%; 
     height: 100px;
   }
@@ -25,15 +23,28 @@
     color: #FD9CC4; 
     font-size: 24px;
   }
+
+  .navbar-custom .navbar-nav .nav-item.track-period {
+    margin-right: auto;
+    margin-left: 1%;
+  }
   
-  .navbar-custom .navbar-brand img {
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  //*.navbar-custom .navbar-brand img {
     width: 150px;
     height: auto;
-  }
+  } *//
 
   .navbar-custom .navbar-nav .nav-link {
     color: #FD9CC4; 
-    margin: 0 50px; 
+    margin: 50px;
     font-size: 30px;
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
@@ -68,13 +79,13 @@
 
 /* Typography */
 
-h1, h2, h3 {
+h1, h2, h3, input {
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
     font-style: italic;
 }
 
-p {
+p, label {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -230,7 +241,14 @@ footer {
     margin-top: auto!;
     display: block;
 }  
-                                      /* Form and Calendar styles */
+ /* Form and Calendar styles */
+
+
+.body-div {
+  width: 100vw;
+  height: 100vh;
+}
+
 
 /* This class is called to hide or unhide various sections*/
 .hide {
@@ -245,10 +263,6 @@ h2 {
   color: #fde3e5;
   font-weight: bolder;
   font-style: italic;
-}
-
-#calendar {
-  margin: 20px 0;
 }
 
 .inputs {
@@ -346,7 +360,7 @@ h2 {
   color: #bb83bb;
 }
 
-                                      /* Form and Calendar styles */
+/* --------------------------------------------------Form and Calendar styles */
 
 /* This class is called to hide or unhide various sections*/
 .hide {
@@ -401,7 +415,7 @@ h2 {
 .list-group-item{
   background-color: transparent;
   border-bottom: none;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 
 .list-group-flush {
