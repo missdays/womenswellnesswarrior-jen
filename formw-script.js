@@ -11,8 +11,6 @@ const nameCard = document.getElementById("name-card");
 const periodStartDateCard = document.getElementById("period-start-date-card");
 const periodLengthCard = document.getElementById("period-length-card");
 const cycleLengthCard = document.getElementById("cycle-length-card");
-const CalendarSection = document.getElementById('calendar-section')
-const FormSection = document.getElementById('form-section')
 
 // BUTTONS
 const nameButton = document.getElementById("name-button");
@@ -100,11 +98,11 @@ cycleLengthButton.addEventListener("click", () => {
   // Scale out cycle length card
   cycleLengthCard.classList.remove("scale-in-center");
   cycleLengthCard.classList.add("scale-out-center");
+  // Show loading message
+  loadingContainer.classList.remove("hide");
+  loadingContainer.classList.add("text-focus-in");
   setTimeout(function () {
-    // Hide cycle length card after scaled out and initiate period calculation and calendar's display
-    CalendarSection.classList.remove('hide');
-    FormSection.classList.add('hide');
-    CalculatePeriod();
+    console.log("Go to results page");
   }, 500);
 });
 
