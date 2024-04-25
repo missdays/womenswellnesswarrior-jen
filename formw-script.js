@@ -90,5 +90,24 @@ cycleLengthButton.addEventListener("click", () => {
   }, 500);
 });
 
-// To retrieve data from local storage
+// Retrieve data from local storage
 const dotUserName = JSON.parse(localStorage.getItem("dot_username"));
+const dotPeriodStartDate = JSON.parse(
+  localStorage.getItem("dot_period_start_date")
+);
+const dotPeriodLength = JSON.parse(localStorage.getItem("dot_period_length"));
+const dotCycleLength = JSON.parse(localStorage.getItem("dot_cycle_length"));
+
+// Set user data in form if it exists in local storage
+if (dotUserName) {
+  usersName.value = dotUserName;
+}
+if (dotPeriodStartDate) {
+  periodStartDate.value = dotPeriodStartDate;
+}
+if (dotPeriodLength) {
+  periodLength.value = dotPeriodLength;
+}
+if (dotCycleLength) {
+  cycleLength.value = dotCycleLength;
+}
