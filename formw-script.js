@@ -5,8 +5,8 @@ const periodLengthCard = document.getElementById("period-length-card");
 const cycleLengthCard = document.getElementById("cycle-length-card");
 const loadingContainer = document.getElementById("loading-container");
 const displayUsername = document.getElementById("display-username");
-const CalendarSection = document.getElementById('calendar-section');
-const FormSection = document.getElementById('form-section');
+const CalendarSection = document.getElementById("calendar-section");
+const FormSection = document.getElementById("form-section");
 
 // BUTTONS
 const nameButton = document.getElementById("name-button");
@@ -23,8 +23,8 @@ const periodLength = document.getElementById("period-length");
 const cycleLength = document.getElementById("cycle-length");
 
 window.onload = function () {
-  CalendarSection.classList.add('hide')
-  FormSection.classList.remove('hide')
+  CalendarSection.classList.add("hide");
+  FormSection.classList.remove("hide");
 };
 
 // SUBMIT NAME
@@ -99,9 +99,8 @@ cycleLengthButton.addEventListener("click", () => {
   loadingContainer.classList.add("text-focus-in");
   setTimeout(function () {
     window.location.href = "calendar.html";
-  }, 500);
+  }, 5000);
 });
-
 
 // // Set user data in form if it exists in local storage
 // if (dotUserName) {
