@@ -183,7 +183,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 35px;
 }
 
@@ -213,6 +213,12 @@ main {
     margin-left:auto;
 }
 
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+
 .text {
     display: flex;
     flex-direction: column;
@@ -221,8 +227,14 @@ main {
     color: #894d84;
 }
 
+.feature-box {
+  border-radius: 11.803px;
+    background: #FFF;
+  padding: 6px 25.82px;
+
+}
+
 .start-button {
-    margin-top: 20px;
     border-radius: 10px;
     padding: 5px 33px 5px 33px;
     border: none;
