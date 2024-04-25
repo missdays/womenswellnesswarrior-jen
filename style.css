@@ -23,7 +23,7 @@ body {
 
 /* Navbar Styling */
 .navbar-custom {
-    background-color: --light_pink;
+    background-color: #FDE3E5;
     width: 100%; 
     height: 100px;
   }
@@ -35,17 +35,25 @@ body {
 
   .navbar-custom .navbar-nav .nav-item.track-period {
     margin-right: auto;
-    margin-left: 15%;
+    margin-left: 1%;
   }
   
-  .navbar-custom .navbar-brand img {
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  //*.navbar-custom .navbar-brand img {
     width: 150px;
     height: auto;
-  }
+  } *//
 
   .navbar-custom .navbar-nav .nav-link {
     color: #FD9CC4; 
-    margin: 0 50px; 
+    margin: 50px;
     font-size: 30px;
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
