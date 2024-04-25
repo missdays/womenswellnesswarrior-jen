@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="formw-style.css" />
     <script src="script.js" defer></script>
+    <!-- FullCalendar -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -86,7 +88,7 @@
       <!-- </div> -->
     </nav>
 
-    <div class="background">
+    <div class="background" id="form-section">
       <div class="container">
         <!-- Name card -->
         <div class="form-card" id="name-card">
@@ -174,7 +176,45 @@
         </div>
       </div>
     </div>
+
+    <div class="background" id="calendar-section">
+    
+      <h2>My calendar</h2>
+
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-sm-8">
+            <!-- <span>
+              <button class="btn btn-success my-btn" type="button" id="change-year" title="Year/Month">Year</button>
+              <button class="btn btn-success my-btn" type="button" id="change-month" title="Year/Month">Month</button>
+            </span> -->
+            <div id='calendar'></div>
+          </div>
+          <div class="col-sm-4 info-div">
+            <button class="btn btn-success my-btn" type="button" id="edit-period" title="Year/Month">Edit
+              Period</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="circle circle-blue"></div>Pre-period
+              </li>
+              <li class="list-group-item">
+                <div class="circle circle-red"></div>Period
+              </li>
+              <li class="list-group-item">
+                <div class="circle circle-green"></div>Post-period
+              </li>
+              <li class="list-group-item">
+                <div class="circle circle-purple"></div>Peak ovulation
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
   </body>
-  <script src="script.js"></script>
+  <footer>
+    <p>Women's Wellness Warriors</p>
+  </footer>
   <script src="formw-script.js"></script>
 </html>
