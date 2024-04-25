@@ -1,6 +1,4 @@
 /* Variables */
-/* these root colours make the process of coding quicker, example : "background: --base;" instead of typing out the full code*/
-
 :root{
     --base : #fffbf6;
     --light_pink: #FDE3E5;
@@ -9,66 +7,7 @@
     --purple:#bb83bb;
 }
 
-
 /* Reset */
-
-/* Navbar Styling */
-.navbar-custom {
-    background-color: #FDE3E5;
-    width: 100%; 
-    height: 100px;
-  }
-  
-  .navbar-custom .navbar-brand {
-    color: #FD9CC4; 
-    font-size: 24px;
-  }
-
-  .navbar-custom .navbar-nav .nav-item.track-period {
-    margin-right: auto;
-    margin-left: 1%;
-  }
-  
-  .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  //*.navbar-custom .navbar-brand img {
-    width: 150px;
-    height: auto;
-  } *//
-
-  .navbar-custom .navbar-nav .nav-link {
-    color: #FD9CC4; 
-    margin: 50px;
-    font-size: 30px;
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .navbar-custom .navbar-nav .nav-link:hover {
-    color: #F272B8;
-  }
-  
-  .navbar-custom .navbar-nav .nav-link.active {
-    color: #FFFBF6; 
-  }
-  
-  .navbar-custom .navbar-toggler-icon {
-    background-color: #BB38BB;
-  }
-  
-  /* Centering Navbar Links */
-  .navbar-custom .navbar-nav {
-    width: 100%; 
-    justify-content: center;
-  }
-
 *,
 *::before,
 *::after {
@@ -78,7 +17,6 @@
 }
 
 /* Typography */
-
 h1, h2, h3, input {
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
@@ -89,7 +27,6 @@ p, label {
     font-family: "Montserrat", sans-serif;
 }
 
-
 .background {
     background-image: url("assets/background2.webp");
     background-position: center;
@@ -98,55 +35,6 @@ p, label {
     width: 100%; 
 }
 
-
-/* Navbar Styling */
-.navbar-custom {
-    background-color: --light_pink;
-    width: 100%; 
-    height: 100px;
-  }
-
-  
-.word-logo {
-  max-width:150px;
-}
-  
-  .navbar-custom .navbar-brand {
-    color: var(--medium_pink); 
-    font-size: 24px;
-  }
-  
-  .navbar-custom .navbar-brand img {
-    width: 150px;
-    height: auto;
-  }
-
-  .navbar-custom .navbar-nav .nav-link {
-    color: var(--medium_pink); 
-    margin: 0 50px; 
-    font-size: 30px;
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .navbar-custom .navbar-nav .nav-link:hover {
-    color: var(--bright_pink);
-  }
-  
-  .navbar-custom .navbar-nav .nav-link.active {
-    color: var(--base); 
-  }
-  
-  .navbar-custom .navbar-toggler-icon {
-    background-color: var(var(--purple));
-  }
-  
-  /* Centering Navbar Links */
-  .navbar-custom .navbar-nav {
-    width: 100%; 
-    justify-content: center;
-  }
 /* ----------------------------------------- index.html */
 body {
     height: 100vh;
@@ -241,8 +129,8 @@ footer {
     margin-top: auto!;
     display: block;
 }  
- /* Form and Calendar styles */
 
+/* Form and Calendar styles */
 
 .body-div {
   width: 100vw;
@@ -250,7 +138,7 @@ footer {
 }
 
 
-/* This class is called to hide or unhide various sections*/
+/* This class is called to hide or un-hide various sections*/
 .hide {
   display: none;
 }
@@ -360,118 +248,6 @@ h2 {
   color: #bb83bb;
 }
 
-/* --------------------------------------------------Form and Calendar styles */
-
-/* This class is called to hide or unhide various sections*/
-.hide {
-  display: none;
-}
-
-/*  Form styles */
-
-h2 {
-  text-align: center;
-  margin-top: 30px;
-  color: #fde3e5;
-  font-weight: bolder;
-  font-style: italic;
-}
-
 #calendar {
   margin: 20px 0;
-}
-
-.inputs {
-  margin-top: 100px;
-}
-
-.input-fields {
-  margin: 20px 0;
-  border: none;
-}
-
-.my-btn {
-  margin-top: 20px;
-  background-color: transparent;
-  color: #fffbf6;
-  border-color: #fffbf6;
-}
-
-.btn:hover {
-  color: #fffbf6;
-  background-color: #bb83bb;
-  border-color: #bb83bb;
-  font-weight: bold;
-}
-
-.info-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: space-around;
-  flex-wrap: wrap;
-}
-
-.list-group-item{
-  background-color: transparent;
-  border-bottom: none;
-  margin: 15px 0;
-}
-
-.list-group-flush {
-  text-align: left;
-  margin-top: 15px;
-}
-
-.circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.circle-blue {
-  border-color: lightblue;
-  background-color: lightblue;
-}
-
-.circle-red {
-  border-color: lightcoral;
-  background-color: lightcoral;
-}
-
-.circle-green {
-  border-color: lightgreen;
-  background-color: lightgreen;
-}
-.circle-purple {
-  border-color: #bb83bb;
-  background-color: #bb83bb;
-}
-
-/* Calendar styles */
-
-.fc-theme-standard td {
-  background-color: #fffbf6;
-}
-
-.fc-theme-standard th {
-  background-color: #bb83bb;
-}
-
-.fc .fc-col-header-cell-cushion {
-  color: #fffbf6;
-}
-
-.fc .fc-daygrid-day-number {
-  color: #bb83bb;
-}
-
-.fc .fc-button-primary {
-  background-color: transparent;
-}
-
-.fc .fc-multimonth-title {
-  color: #bb83bb;
 }
