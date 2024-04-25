@@ -12,6 +12,7 @@ Due to time constraints, not all of our planned features could make into the fin
 
 - Background colour
 - git troubles
+-Circular tracker not tracking date 
 
 ### Tools Used
 
@@ -19,6 +20,7 @@ Due to time constraints, not all of our planned features could make into the fin
 [Bootstrap](https://getbootstrap.com/)  
 [Google Fonts](https://fonts.google.com/)  
 [FullCalendar](https://fullcalendar.io/)
+[Circular Dial](https://codepen.io/robertkoons/pen/NByBMg)
 
 
 npm install fullcalendar
