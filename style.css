@@ -12,23 +12,7 @@
 
 /* Reset */
 
-/* background image applied */
-body {
-  background-image: url(assets/Free-pink-gradient-aesthetic-background-from-Fotor.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  height: 100vh;
-}
 
-/* background image applied */
-body {
-  background-image: url(assets/Free-pink-gradient-aesthetic-background-from-Fotor.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  height: 100vh;
-}
 
 /* Navbar Styling */
 .navbar-custom {
@@ -94,14 +78,16 @@ p {
     font-family: "Montserrat", sans-serif;
 }
 
+
 .background {
-    /*background-image: url("./assets/Free-pink-gradient-aesthetic-background-from-Fotor.webp");*/
-    background-image: url("assets/background2.jpg");
+    background-image: url("assets/background2.webp");
     background-position: center;
     background-size: cover;
     height: 100vh;
     width: 100%; 
 }
+
+
 /* Navbar Styling */
 .navbar-custom {
     background-color: --light_pink;
@@ -152,18 +138,22 @@ p {
   }
 /* ----------------------------------------- index.html */
 body {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
     opacity: 1; 
+    background-image: url("assets/background2.webp");
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
 }
 
 .wrapper {  
-    max-width: 900px;
-    margin: 40px 80px 0 80px;
+  max-width: 900px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,72 +161,75 @@ body {
     border-radius: 40px;
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(6px);
-    /* For Safari (unprefixed version is not yet supported) */
     -webkit-backdrop-filter: blur(6px);
+}
+
+@media only screen and (max-width: 630px) {
+  .wrapper {
+    margin: auto;
   }
+}
 
-  @media only screen and (max-width: 630px) {
-    .wrapper {
-      margin: 20px 10px 0 10px;
-    }
- }
-
-  main {
+main {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 35px;
- }
+}
+
+@media only screen and (max-width: 630px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+}
 
  @media only screen and (max-width: 630px) {
-    main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
- }
+  .text-box {
+    text-align: center;
+  padding: 0 25px 25px 25px;
+  }
+}
 
- .mock-up-image {
+.mock-up-image {
     width: 100%;
-    aspect-ratio: 2/3;
     object-fit: cover;
     height: 500px;
     max-width:400px;
     border-radius:24px;
     margin-left:auto;
-  }
+}
 
-  .text {
+.text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 40px;
-    color: var(--bright_pink)
-  }
+    color: #894d84;
+}
 
 .start-button {
     margin-top: 20px;
-    border-radius: 25px;
-    width: 200px;
-    height: 56px;
+    border-radius: 10px;
+    padding: 5px 33px 5px 33px;
     border: none;
-    color: #bb83bb;
-    font-size: 18px;
-    background-color: #FDE3E5;
-    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.2586);
+    color: white;
+    font-size: 16px;
+    background-color: #693e66;
 }
 
 .start-button:hover {
-    background-color: var(--medium_pink);
+    background-color:#bb83bb;
     color: white;
-  }
+}
 
-  footer {
-    color: white;
-    margin-top: 40px;
-    display: flex;
-    position:fixed;
-    bottom:0px;
-  }
+footer {
+    color: black;
+    margin-top: auto!;
+    display: block;
+}  
                                       /* Form and Calendar styles */
 
 /* This class is called to hide or unhide various sections*/
