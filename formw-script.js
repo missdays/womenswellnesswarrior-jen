@@ -12,8 +12,17 @@ const periodStartDateButton = document.getElementById(
 const periodLengthButton = document.getElementById("period-length-button");
 const cycleLengthButton = document.getElementById("cycle-length-button");
 
+// USER INPUTS
+const usersName = document.getElementById("users-name");
+const periodStartDate = document.getElementById("period-start-date");
+const periodLength = document.getElementById("period-length");
+const cycleLength = document.getElementById("cycle-length");
+
 // SUBMIT NAME
 nameButton.addEventListener("click", () => {
+  // Set user name in local storage
+  const usersName_string = JSON.stringify(usersName.value);
+  localStorage.setItem("dot_username", usersName_string);
   // Scale out name card
   nameCard.classList.add("scale-out-center");
   setTimeout(function () {
@@ -29,12 +38,15 @@ nameButton.addEventListener("click", () => {
 
 // SUBMIT PERIOD START DATE
 periodStartDateButton.addEventListener("click", () => {
+  // Set period start date in local storage
+  const periodStartDate_string = JSON.stringify(periodStartDate.value);
+  localStorage.setItem("dot_period_start_date", periodStartDate_string);
   // Scale out period start date card
   periodStartDateCard.classList.remove("scale-in-center");
   periodStartDateCard.classList.add("scale-out-center");
   setTimeout(function () {
     // Hide period start date card after scaled out
-    periodStartCard.classList.add("hide");
+    periodStartDateCard.classList.add("hide");
   }, 500);
   setTimeout(function () {
     // Show period length card with scale in
@@ -45,6 +57,9 @@ periodStartDateButton.addEventListener("click", () => {
 
 // SUBMIT PERIOD LENGTH
 periodLengthButton.addEventListener("click", () => {
+  // Set period length in local storage
+  const periodLength_string = JSON.stringify(periodLength.value);
+  localStorage.setItem("dot_period_length", periodLength_string);
   // Scale out period length card
   periodLengthCard.classList.remove("scale-in-center");
   periodLengthCard.classList.add("scale-out-center");
@@ -61,6 +76,12 @@ periodLengthButton.addEventListener("click", () => {
 
 // SUBMIT CYCLE LENGTH
 cycleLengthButton.addEventListener("click", () => {
+  // Set cycle length in local storage
+  const cycleLength_string = JSON.stringify(cycleLength.value);
+  localStorage.setItem("dot_cycle_length", cycleLength_string);
+  // Set localStorage
+  const userDataSerialized = JSON.stringify(userData);
+  localStorage.setItem("userData", userDataSerialized);
   // Scale out cycle length card
   cycleLengthCard.classList.remove("scale-in-center");
   cycleLengthCard.classList.add("scale-out-center");
@@ -68,3 +89,25 @@ cycleLengthButton.addEventListener("click", () => {
     console.log("Go to results page");
   }, 500);
 });
+
+// Retrieve data from local storage
+const dotUserName = JSON.parse(localStorage.getItem("dot_username"));
+const dotPeriodStartDate = JSON.parse(
+  localStorage.getItem("dot_period_start_date")
+);
+const dotPeriodLength = JSON.parse(localStorage.getItem("dot_period_length"));
+const dotCycleLength = JSON.parse(localStorage.getItem("dot_cycle_length"));
+
+// Set user data in form if it exists in local storage
+if (dotUserName) {
+  usersName.value = dotUserName;
+}
+if (dotPeriodStartDate) {
+  periodStartDate.value = dotPeriodStartDate;
+}
+if (dotPeriodLength) {
+  periodLength.value = dotPeriodLength;
+}
+if (dotCycleLength) {
+  cycleLength.value = dotCycleLength;
+}
