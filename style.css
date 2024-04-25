@@ -75,13 +75,13 @@ body {
 
 /* Typography */
 
-h1, h2, h3 {
+h1, h2, h3, input {
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
     font-style: italic;
 }
 
-p {
+p, label {
     font-family: "Montserrat", sans-serif;
 }
 
