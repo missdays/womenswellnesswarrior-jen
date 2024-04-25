@@ -1,5 +1,5 @@
 .navbar-custom {
-  background-color: #fde3e5b3;
+  background-color: #fde3e5;
   width: 100%; 
   height: 100px;
 }
@@ -10,7 +10,7 @@
 
 .navbar-brand {
   color: var(--medium_pink); 
-font-size: 24px;
+  font-size: 24px;
 }
 
 .navbar-custom .navbar-brand img {
@@ -19,11 +19,11 @@ font-size: 24px;
 }
 
 .logo-container {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-right: auto;
-margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 2rem;
 }
 
 .navbar-custom .navbar-nav .nav-link {
@@ -44,6 +44,14 @@ margin-left: 2rem;
 }
 
 .navbar-nav {
-width: 100%; 
-justify-content: center;
+  width: 100%; 
+  justify-content: center;
+}
+
+ul.navbar-nav {
+  background-color: #fde3e5;
+}
+
+.navbar-toggler {
+  margin-left: 1rem;
 }
