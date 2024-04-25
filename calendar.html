@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- json file -->
+    <script src="periodInfo.json"></script>
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -104,16 +106,48 @@
               Period</button>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <div class="circle circle-blue"></div>Pre-period
+                <div class="circle circle-blue"></div>
+                  <a data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                  Pre-period
+                  </a>
+                  <div class="collapse" id="collapse1">
+                    <div class="card card-body">
+                      Pre-period
+                    </div>
+                  </div>
               </li>
               <li class="list-group-item">
-                <div class="circle circle-red"></div>Period
+                <div class="circle circle-red"></div>
+                <a data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                  Period
+                  </a>
+                  <div class="collapse" id="collapse2">
+                    <div class="card card-body">
+                      period
+                    </div>
+                  </div>
               </li>
               <li class="list-group-item">
-                <div class="circle circle-green"></div>Post-period
+                <div class="circle circle-green"></div>
+                <a data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                  Post Period
+                  </a>
+                  <div class="collapse" id="collapse3">
+                    <div class="card card-body">
+                      post period
+                    </div>
+                  </div>
               </li>
               <li class="list-group-item">
-                <div class="circle circle-purple"></div>Peak ovulation
+                <div class="circle circle-purple"></div>
+                <a data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+                  Peak Ovulation
+                  </a>
+                  <div class="collapse" id="collapse4">
+                    <div class="card card-body">
+                      Ovulation
+                    </div>
+                  </div>
               </li>
             </ul>
           </div>
