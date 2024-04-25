@@ -3,6 +3,8 @@ const nameCard = document.getElementById("name-card");
 const periodStartDateCard = document.getElementById("period-start-date-card");
 const periodLengthCard = document.getElementById("period-length-card");
 const cycleLengthCard = document.getElementById("cycle-length-card");
+const loadingContainer = document.getElementById("loading-container");
+const displayUsername = document.getElementById("display-username");
 
 // BUTTONS
 const nameButton = document.getElementById("name-button");
@@ -85,9 +87,12 @@ cycleLengthButton.addEventListener("click", () => {
   // Scale out cycle length card
   cycleLengthCard.classList.remove("scale-in-center");
   cycleLengthCard.classList.add("scale-out-center");
+  // Show loading message
+  loadingContainer.classList.remove("hide");
+  loadingContainer.classList.add("text-focus-in");
   setTimeout(function () {
-    console.log("Go to results page");
-  }, 500);
+    window.location.href = "form.html";
+  }, 5000);
 });
 
 // Retrieve data from local storage
