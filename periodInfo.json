@@ -1,6 +1,6 @@
-{
+[{
     "phase": "period",
-    "description" : "",
+    "description": "",
     "symptoms": "Expected symptoms include menstrual cramps, fatigue, and mood swings.",
     "advice": "During this phase, you may experience bleeding and discomfort. Prioritise self-care and manage discomfort with pain relief.",
     "period products used": "",
@@ -9,8 +9,7 @@
         "1": "https://www.healthline.com/health/womens-health/how-to-stop-menstrual-cramps",
         "2": "https://www.everydayhealth.com/wellness/self-care-during-your-period/"
     }
-}
-,
+},
 {
     "phase": "Follicular Phase",
     "description" : "This phase starts after your period ends and lasts until ovulation. You may feel more energetic and experience a rise in libido.",
@@ -43,4 +42,4 @@
         "1": "https://www.nhs.uk/conditions/pre-menstrual-syndrome/",
         "2": "https://www.webmd.com/women/pms/features/diet-and-pms"
     }
-}
+}]
