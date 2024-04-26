@@ -53,14 +53,14 @@ function CalculatePeriod() {
         textColor: 'black',
       },
       {
-        title: 'Pre-Period',
+        title: 'Luteal Phase',
         start: preStart,
         end: preEnd,
         color: 'lightblue',
         textColor: 'black'
       },
       {
-        title: 'Post-Period',
+        title: 'Follicular Phase',
         start: postStart,
         end: postEnd,
         color: 'lightgreen',
