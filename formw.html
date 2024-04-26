@@ -1,216 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dot.</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <link rel="apple-touch-icon" href="assets/webclip.png" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dot.</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/webclip.png" />
+
+  <!-- FullCalendar -->
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- CSS styles -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="formw-style.css" />
-    <script src="script.js" defer></script>
-    <!-- FullCalendar -->
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/076967cb18.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/076967cb18.js" crossorigin="anonymous"></script>
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-      <!-- <div class="container-fluid"> -->
-      <!-- Toggle Button for Mobile View -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <!-- <div class="container-fluid"> -->
+    <!-- Toggle Button for Mobile View -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <!-- Navbar Items -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <!-- Logo -->
-          <li class="nav-item logo-container">
-            <a class="navbar-brand" href="/index.html">
-              <img
-                src="/docs/Group 55.png"
-                width="60"
-                height="60"
-                class="d-inline-block align-top"
-                alt="Logo"
-                loading="lazy"
-              />
-            </a>
-          </li>
-          <!-- Period Start Tab -->
-          <li class="nav-item track-period">
-            <a class="nav-link" href="/formw.html">track period</a>
-          </li>
-          <!-- Your dot. Tab -->
-          <li class="nav-item">
-            <a class="nav-link" href="/calendar.html">your dot.</a>
-          </li>
-          <!-- About Us Tab -->
-          <li class="nav-item">
-            <a class="nav-link" href="">about us</a>
-          </li>
-        </ul>
+    <!-- Navbar Items -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <!-- Logo -->
+        <li class="nav-item logo-container">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/docs/Group 55.png" width="60" height="60" class="d-inline-block align-top" alt="Logo"
+              loading="lazy" />
+          </a>
+        </li>
+        <!-- Period Start Tab -->
+        <li class="nav-item track-period">
+          <a class="nav-link" href="/formw.html">track period</a>
+        </li>
+        <!-- Your dot. Tab -->
+        <li class="nav-item">
+          <a class="nav-link" href="/calendar.html">your dot.</a>
+        </li>
+        <!-- About Us Tab -->
+        <li class="nav-item">
+          <a class="nav-link" href="/about-us.html">about us</a>
+        </li>
+      </ul>
+    </div>
+    <!-- </div> -->
+  </nav>
+
+  <div class="background" id="form-section">
+    <div class="container">
+      <!-- Name card -->
+      <div class="form-card" id="name-card">
+        <div class="card-body">
+          <label class="form-label" for="users-name">What would you like to be called?</label>
+          <input id="users-name" name="users-name" type="text" class="form-control input-fields" placeholder="name"
+            aria-label="user-name" required />
+          <button id="name-button" class="submit-button">Submit</button>
+        </div>
       </div>
-      <!-- </div> -->
-    </nav>
 
-    <div class="background" id="form-section">
-      <div class="container">
-        <!-- Name card -->
-        <div class="form-card" id="name-card">
-          <div class="card-body">
-            <label class="form-label" for="users-name"
-              >What would you like to be called?</label
-            >
-            <input
-              id="users-name"
-              name="users-name"
-              type="text"
-              class="form-control input-fields"
-              placeholder="name"
-              aria-label="user-name"
-              required
-            />
-            <button id="name-button" class="submit-button">Submit</button>
-          </div>
+      <!-- Period start date card -->
+      <div class="hide form-card" id="period-start-date-card">
+        <div class="card-body">
+          <label class="form-label" for="period-start-date">When did your last period start?</label>
+          <input id="period-start-date" name="period-start-date" type="date" class="form-control input-fields"
+            placeholder="" aria-label="period-start-date" required />
+          <button id="period-start-date-button" class="submit-button">
+            Next
+          </button>
         </div>
+      </div>
 
-        <!-- Period start date card -->
-        <div class="hide form-card" id="period-start-date-card">
-          <div class="card-body">
-            <label class="form-label" for="period-start-date"
-              >When did your last period start?</label
-            >
-            <input
-              id="period-start-date"
-              name="period-start-date"
-              type="date"
-              class="form-control input-fields"
-              placeholder=""
-              aria-label="period-start-date"
-              required
-            />
-            <button id="period-start-date-button" class="submit-button">
-              Next
-            </button>
-          </div>
+      <!-- Period length card -->
+      <div class="hide form-card" id="period-length-card">
+        <div class="card-body">
+          <label class="form-label" for="period-length">How many days does your period usually last?</label>
+          <input id="period-length" name="period-length" type="number" class="form-control input-fields" placeholder="5"
+            aria-label="period-length" required />
+          <button id="period-length-button" class="submit-button">
+            Next
+          </button>
         </div>
+      </div>
 
-        <!-- Period length card -->
-        <div class="hide form-card" id="period-length-card">
-          <div class="card-body">
-            <label class="form-label" for="period-length"
-              >How many days does your period usually last?</label
-            >
-            <input
-              id="period-length"
-              name="period-length"
-              type="number"
-              class="form-control input-fields"
-              placeholder="5"
-              aria-label="period-length"
-              required
-            />
-            <button id="period-length-button" class="submit-button">
-              Next
-            </button>
-          </div>
+      <!-- Cycle length card -->
+      <div class="hide form-card" id="cycle-length-card">
+        <div class="card-body">
+          <label class="form-label" for="cycle-length">How many days does your cycle usually last?</label>
+          <input id="cycle-length" name="cycle-length" type="number" class="form-control input-fields" placeholder="28"
+            aria-label="cycle-length" required />
+          <button id="cycle-length-button" class="submit-button">Next</button>
         </div>
-
-        <!-- Cycle length card -->
-        <div class="hide form-card" id="cycle-length-card">
-          <div class="card-body">
-            <label class="form-label" for="cycle-length"
-              >How many days does your cycle usually last?</label
-            >
-            <input
-              id="cycle-length"
-              name="cycle-length"
-              type="number"
-              class="form-control input-fields"
-              placeholder="28"
-              aria-label="cycle-length"
-              required
-            />
-            <button id="cycle-length-button" class="submit-button">Next</button>
-          </div>
-        </div>
-        <div id="loading-container" class="hide text-center">
-          <h1>
-            Thanks, hold on while we track your dot<span class="ping">.</span>
-          </h1>
-        </div>
+      </div>
+      <div id="loading-container" class="hide text-center">
+        <h1>
+          Thanks, hold on while we track your dot<span class="ping">.</span>
+        </h1>
       </div>
     </div>
+  </div>
 
-    <!-- <div class="background" id="calendar-section">
-    
-      <h2>My calendar</h2>
+  <div class="background" id="calendar-section"></div>
 
-      <div class="container-fluid text-center">
-        <div class="row">
-          <div class="col-sm-8">
-            <div id='calendar'></div>
-          </div>
-          <div class="col-sm-4 info-div">
-            <button class="btn btn-success my-btn" type="button" id="edit-period" title="Year/Month">Edit
-              Period</button>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <div class="circle circle-blue"></div>Pre-period
-              </li>
-              <li class="list-group-item">
-                <div class="circle circle-red"></div>Period
-              </li>
-              <li class="list-group-item">
-                <div class="circle circle-green"></div>Post-period
-              </li>
-              <li class="list-group-item">
-                <div class="circle circle-purple"></div>Peak ovulation
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    
-  </div> -->
-  </body>
-  <footer>
-    <p>Women's Wellness Warriors</p>
-  </footer>
-  <script src="formw-script.js"></script>
+</body>
+<footer>
+  <p>Women's Wellness Warriors</p>
+</footer>
+<script src="formw-script.js"></script>
+
+
 </html>

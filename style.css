@@ -11,13 +11,13 @@
 /* Reset */
 
 /* background image applied */
-body {
+/* body {
   background-image: url(assets/background2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   height: 100vh;
-}
+} */
 
 *,
 *::before,
@@ -148,9 +148,12 @@ main {
 }
 
 footer {
+    background-color: var(--light_pink);
     color: black;
-    margin-top: auto!;
+    margin-top: auto;
     display: block;
+    width: 100vw;
+    text-align: center;
 }  
 
 /* Form and Calendar styles */
