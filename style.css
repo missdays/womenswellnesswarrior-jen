@@ -156,8 +156,8 @@ footer {
     width: 100vw;
     text-align: center;
     padding-top: 10px; 
+    position: fixed;
 }  
-
 
 /* Form and Calendar styles */
 
