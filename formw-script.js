@@ -36,12 +36,14 @@ window.onload = function () {
   FormSection.classList.remove("hide");
 };
 
+
+
 // SUBMIT NAME
 nameButton.addEventListener("click", () => {
+  //checkUsersName();
   // Set user name in local storage
   const usersName_string = JSON.stringify(usersName.value);
   localStorage.setItem("dot_username", usersName_string);
-  //checkUsersName();
   // Scale out name card
   nameCard.classList.add("scale-out-center");
   setTimeout(function () {
@@ -113,121 +115,31 @@ cycleLengthButton.addEventListener("click", () => {
   }, 5000);
 });
 
-// // Set user data in form if it exists in local storage
-// if (dotUserName) {
-//   usersName.value = dotUserName;
-// }
-// if (dotPeriodStartDate) {
-//   periodStartDate.value = dotPeriodStartDate;
-// }
-// if (dotPeriodLength) {
-//   periodLength.value = dotPeriodLength;
-// }
-// if (dotCycleLength) {
-//   cycleLength.value = dotCycleLength;
-// }
+function storeData() {
+  const userData = {
+    dot_username: usersName.value,
+    dot_period_start_date: periodStartDate.value,
+    dot_period_length: periodLength.value,
+    dot_cycle_length: cycleLength.value,
+  };
+  dot_UserData.push(userData);
+  localStorage.setItem("dotUserData", JSON.stringify(dot_UserData));
 
-// function CalculatePeriod() {
-//   // Retrieve data from local storage
-//   const dotUserName = JSON.parse(localStorage.getItem("dot_username"));
-//   const dotPeriodStartDate = JSON.parse(localStorage.getItem("dot_period_start_date"));
-//   const dotPeriodLength = JSON.parse(localStorage.getItem("dot_period_length"));
-//   const dotCycleLength = JSON.parse(localStorage.getItem("dot_cycle_length"));
+}
 
-//   //These functions calculate each event using the data from local storage
-//   periodEnd(dotPeriodStartDate, dotPeriodLength);
-//   prePeriod(dotPeriodStartDate);
-//   postPeriod(endinng);
-//   peakOvulation(endinng);
+/**
+ * Checks for a returning user
+ */
+function checkUsersName() {
 
-//   //the code to show the calendar with the events
-//   var calendarEl = document.getElementById('calendar');
-//   var calendar = new FullCalendar.Calendar(calendarEl, {
-//     timeZone: 'local',
-//     initialView: 'dayGridMonth',
-//     height: 400,
-//     headerToolbar: {
-//       left: 'prev,next today',
-//       center: 'title',
-//       right: 'dayGridMonth,multiMonthYear'
-//     },
-//     events: [
-//       {
-//         title: 'Period',
-//         start: dotPeriodStartDate,
-//         end: endinng,
-//         color: 'lightcoral',
-//         textColor: 'black',
-//       },
-//       {
-//         title: 'Pre-Period',
-//         start: preStart,
-//         end: preEnd,
-//         color: 'lightblue',
-//         textColor: 'black'
-//       },
-//       {
-//         title: 'Post-Period',
-//         start: postStart,
-//         end: postEnd,
-//         color: 'lightgreen',
-//         textColor: 'black'
-//       },
-//       {
-//         title: 'Peak Ovulation',
-//         start: peakStart,
-//         end: peakEnd,
-//         color: '#bb83bb',
-//         textColor: 'black'
-//       }
-//     ],
-//   });
-//   calendar.render();
-// };
+  const dotUserData = dot_UserData.map((user) => user);
+  console.log(dotUserData);
 
-// /**
-//  * To calculate the end date of the period
-//  */
-// function periodEnd(startDate, lengthPeriod) {
-
-//   happening = new Date(startDate);
-//   endinng = happening.setDate(happening.getDate() + parseInt(lengthPeriod));
-
-//   return endinng;
-// }
-
-// /**
-//  * To calculate the pre-period
-//  */
-// function prePeriod(startDate) {
-
-//   pre = new Date(startDate);
-//   preEnd = pre.setDate(pre.getDate() - 1);
-//   preStart = pre.setDate(pre.getDate() - 1);
-
-//   return preStart, preEnd;
-// }
-
-// /**
-//  * To calculate the post-period
-//  */
-// function postPeriod(endOfPeriod) {
-
-//   post = new Date(endOfPeriod);
-//   postStart = post.setDate(post.getDate() + 1);
-//   postEnd = post.setDate(post.getDate() + 1);
-
-//   return postStart, postEnd;
-// }
-
-// /**
-//  * To calculate the peak ovulation
-//  */
-// function peakOvulation(endOfPeriod) {
-
-//   peak = new Date(endOfPeriod);
-//   peakStart = peak.setDate(peak.getDate() + 6);
-//   peakEnd = peak.setDate(peak.getDate() + 5);
-
-//   return peakStart, peakEnd;
-// }
+  for (let user of dotUserData) {
+    if (user.dot_username === usersName.value) {
+      returingUser = user
+      console.log(returingUser);
+      window.location.href = "calendar.html";
+    }
+  }
+}
