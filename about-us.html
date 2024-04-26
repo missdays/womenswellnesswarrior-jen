@@ -6,14 +6,14 @@
         <title>About Us</title>
         <link rel="apple-touch-icon" href="assets/webclip.png">
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-        
+
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
         href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"
-        />
+        rel="stylesheet"/>
+        <link rel="stylesheet" href="navbar.css" />
 
         <style>
             /* Style background */
@@ -47,11 +47,15 @@
             h2 {
                 font-family: "Montserrat", sans-serif;
                 font-size: 1.75vw;
+                padding-top: 2%;
             }
             /* Style team summary */
             p {
                 font-family: "Montserrat", sans-serif;
                 font-size: 1.25vw;
+                text-align: justify;
+                padding-left: 2%; 
+                padding-right: 2%;
             }
             /* Animation for when cursor hovers over GitHub link */
             .text-grow {
@@ -76,6 +80,8 @@
             .container {
                 padding: 0 16px;
                 border-style: hidden;
+                background-color: #fffbf666;
+                border-radius: 2rem;
             }
             /* Style team title */
             .title {
@@ -86,16 +92,18 @@
             /* Style position of team photos in relation to summary text */
             .image-left {
                 float: left;
+                margin: 20px;
                 margin-right: 10px;
-                border-radius: 25%;
+                border-radius: 50%;
                 overflow: hidden;
                 width: 25%;
                 height: 25%;
             }
             .image-right {
                 float: right;
+                margin: 20px;
                 margin-left: 10px;
-                border-radius: 25%;
+                border-radius: 50%;
                 overflow: hidden;
                 width: 25%;
                 height: 25%;
@@ -109,7 +117,7 @@
             /* Add space between links */
             a {
                 margin: 0 20px;
-                font-family:Georgia, 'Times New Roman', Times, serif;
+                font-family: "Montserrat", sans-serif;
             }
             /* Style for GitHub and LinkedIn Logos */
             .icon {
@@ -126,7 +134,7 @@
         <div class="card">
             <img src="assets/Amy Photo.png" alt="Amy Lewis" class="image-left">
             <div class="container clearfix">
-                <h2>Amy Lewis <span class="title">(Junior Web Developer, Code Institute Alumnus)</span></h2>
+                <h2>Amy Lewis <span class="title">(Web Developer, Code Institute Alumnus)</span></h2>
                 <p>"Hey there, I'm Amy, a Junior Front-End Developer based in London, bringing together my retail experience with a love for coding. 
                     Skilled in React and Javascript, I enjoy collaborating with teams worldwide and thrive on hitting tight deadlines using agile methods. 
                     I'm excited to grow into a software developer and always on the lookout for new learning opportunities. 
@@ -159,7 +167,7 @@
         <div class="card">
             <img src="assets/Bola Photo.JPEG" alt="Bola Akinmarin" class="image-left">
             <div class="container clearfix">
-                <h2>Bola Akinmarin <span class="title">(Human Resources Consultant, Full Stack Software Development Student at Code Institute)</span></h2>
+                <h2>Bola Akinmarin <span class="title">(HR Consultant, Student at Code Institute)</span></h2>
                 <p>"I'm what you might call a boomerang coder. I have a BEng in Computer Engineering but spent the last decade practicsing as a Human Resources Professional. 
                     I enrolled in Code Institute's Full Stack Software Developer course a little over a month ago and determined to change the world one code at a time!"</p>                    
                 <a href="https://github.com/BAkinmarin/" target="_blank" alt="Link to Bola's GitHub">
@@ -174,7 +182,7 @@
         <div class="card">
             <img src="assets/Dyeneffer Photo.jpg" alt="Dyeneffer Dias" class="image-right">
             <div class="container clearfix">
-                <h2>Dyeneffer Dias <span class="title">(Interpreter, Full Stack Software Developer Student at Code Institute)</span></h2>
+                <h2>Dyeneffer Dias <span class="title">(Interpreter, Student at Code Institute)</span></h2>
                 <p>"I'm currently pursuing my Full Stack Software Developer diploma while working as a Consecutive and Over-the-Phone interpreter for over a decade. 
                     Off the clock, you'll find me enjoying quality time with family, doing community volunteer work, and in nature."</p>                    
                 <a href="https://github.com/missdays/" target="_blank" alt="Link to Dyeneffer's GitHub">
@@ -189,7 +197,7 @@
         <div class="card">
             <img src="assets/Charlie Photo.jpeg" alt="Charlie's Photo" class="image-left">
             <div class="container clearfix">
-                <h2>Charlie Enright <span class="title">(Archaeologist, Web Development Student at Code Institute)</span></h2>
+                <h2>Charlie Enright <span class="title">(Archaeologist, Student at Code Institute)</span></h2>
                 <p>“By day, I am an archaeologist specialising in aerial surveys and 3D modeling, passionate about uncovering the past. 
                     I am driven by innovative ways to engage wider audiences. Outside of work, I am pursuing a diploma in web application development at Code Institute.”</p>                    
                 <a href="https://github.com/enrightc" target="_blank" alt="Link to Charlie's GitHub">
@@ -204,8 +212,8 @@
         <div class="card">
             <img src="assets/Andreas_Parides.jpg" alt="Andreas Parides" class="image-right">
             <div class="container clearfix">
-                <h2>Andreas Parides <span class="title">(Pilot, Full Stack Software Development Student at Code Institute)</span></h2>
-                <p>"My name is Andreas and I am a Full Stack Developer to be, as I am going through the Code Institutes online course and this is my 2nd Hackathon. 
+                <h2>Andreas Parides <span class="title">(Pilot, Student at Code Institute)</span></h2>
+                <p>"My name is Andreas and I am a Full Stack Developer to be, as I am going through the Code Institute's online course and this is my 2nd Hackathon. 
                     I am also an airline pilot who is looking, though, to contribute and develop exciting projects through coding and expand my knowledge."</p>                    
                     <a href="https://github.com/parides55" target="_blank" alt="Link to Andreas's GitHub">
                         <img src="assets/github-logo.png" alt="" class="icon text-grow">
