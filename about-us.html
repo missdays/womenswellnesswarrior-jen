@@ -4,11 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Us</title>
+        <link rel="apple-touch-icon" href="assets/webclip.png">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+        />
 
         <style>
             /* Style background */
             body {
-                background-image: url(./assets/Free-pink-gradient-aesthetic-background-from-Fotor.webp);
+                background-image: url(./assets/background2.webp);
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
@@ -30,12 +40,17 @@
             h1 {
                 padding-bottom: 2%;
                 text-align: center;
-                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-family: "Libre Caslon Text", serif;
                 font-size: 50px;
+            }
+            /* Style names */
+            h2 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 1.75vw;
             }
             /* Style team summary */
             p {
-                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-family: "Montserrat", sans-serif;
                 font-size: 1.25vw;
             }
             /* Animation for when cursor hovers over GitHub link */
@@ -61,13 +76,12 @@
             .container {
                 padding: 0 16px;
                 border-style: hidden;
-                align-items: normal;
             }
             /* Style team title */
             .title {
-                font-size: 16px;
+                font-size: 20px;
                 font-style: italic;
-                font-family:Georgia, 'Times New Roman', Times, serif;
+                font-family: "Montserrat", sans-serif;
             }
             /* Style position of team photos in relation to summary text */
             .image-left {
@@ -94,8 +108,15 @@
             }
             /* Add space between links */
             a {
-                margin-right: 20px;
+                margin: 0 20px;
                 font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            /* Style for GitHub and LinkedIn Logos */
+            .icon {
+                width: auto;
+                height: 70px;
+                overflow: hidden;
+                text-align: center;
             }
         </style>
     </head>
@@ -106,9 +127,16 @@
             <img src="assets/Amy Photo.png" alt="Amy Lewis" class="image-left">
             <div class="container clearfix">
                 <h2>Amy Lewis <span class="title">(Junior Web Developer, Code Institute Alumnus)</span></h2>
-                <p>"I am a Junior Web Developer from London, and passionate about making websites that work well and look great!"</p>                    
-                <a href="https://github.com/alcl2000" target="_blank" alt="Link to Amy's GitHub" class="text-grow">Amy GitHub</a>
-                <a href="https://www.linkedin.com/in/amy555lewis/" target="_blank" alt="Link to Amy's LinkedIn" class="text-grow">Amy LinkedIn</a>
+                <p>"Hey there, I'm Amy, a Junior Front-End Developer based in London, bringing together my retail experience with a love for coding. 
+                    Skilled in React and Javascript, I enjoy collaborating with teams worldwide and thrive on hitting tight deadlines using agile methods. 
+                    I'm excited to grow into a software developer and always on the lookout for new learning opportunities. 
+                    When I'm not coding, you'll find me diving into hackathons or brewing up a cuppa!"</p>
+                <a href="https://github.com/alcl2000" target="_blank" alt="Link to Amy's GitHub">
+                    <img src="assets/github-logo.png" alt="" class="icon text-grow">
+                </a>
+                <a href="https://www.linkedin.com/in/amy555lewis/" target="_blank" alt="Link to Amy's LinkedIn">
+                    <img src="assets/LinkedIn-Logo.png" class="icon text-grow">
+                </a>
             </div>
         </div>
 
@@ -118,9 +146,13 @@
                 <h2>Dan Morriss <span class="title">(Web Developer, Code Institute Alumnus)</span></h2>
                 <p>"Hey, I'm Dan, a Full Stack Developer with a passion for problem-solving and continuous learning. My journey into the world of tech began after years as a touring musician and teacher, where I honed my skills in web development by crafting websites for bands and local businesses.
                     In 2023, I further solidified my expertise by completing a diploma in Full Stack Software Development with The Code Institute. 
-                    This comprehensive program equipped me with the technical skills to build dynamic, scalable websites while leveraging my background in creativity and adaptability."</p>                    
-                <a href="https://github.com/DanMorriss/" target="_blank" alt="Link to Dan's GitHub" class="text-grow">Dan GitHub</a>
-                <a href="https://www.linkedin.com/in/morrissdaniel/" target="_blank" alt="Link to Dan's LinkedIn" class="text-grow">Dan LinkedIn</a>
+                    This comprehensive program equipped me with the technical skills to build dynamic, scalable websites while using my skills in creativity and adaptability."</p>                    
+                <a href="https://github.com/DanMorriss/" target="_blank" alt="Link to Dan's GitHub">
+                    <img src="assets/github-logo.png" alt="" class="icon text-grow">
+                </a>
+                <a href="https://www.linkedin.com/in/morrissdaniel/" target="_blank" alt="Link to Dan's LinkedIn">
+                    <img src="assets/LinkedIn-Logo.png" class="icon text-grow">
+                </a>
             </div>
         </div>
 
@@ -128,10 +160,14 @@
             <img src="assets/Bola Photo.JPEG" alt="Bola Akinmarin" class="image-left">
             <div class="container clearfix">
                 <h2>Bola Akinmarin <span class="title">(Human Resources Consultant, Full Stack Software Development Student at Code Institute)</span></h2>
-                <p>"I am what you might call a boomerang coder. I have a BEng in Computer Engineering but spent the last decade practicsing as a Human Resources Professional. 
+                <p>"I'm what you might call a boomerang coder. I have a BEng in Computer Engineering but spent the last decade practicsing as a Human Resources Professional. 
                     I enrolled in Code Institute's Full Stack Software Developer course a little over a month ago and determined to change the world one code at a time!"</p>                    
-                <a href="https://github.com/BAkinmarin/" target="_blank" alt="Link to Bola's GitHub" class="text-grow">Bola GitHub</a>
-                <a href="https://www.linkedin.com/in/bola-akinmarin/" target="_blank" alt="Link to Bola's LinkedIn" class="text-grow">Bola LinkedIn</a>
+                <a href="https://github.com/BAkinmarin/" target="_blank" alt="Link to Bola's GitHub">
+                    <img src="assets/github-logo.png" alt="" class="icon text-grow">
+                </a>
+                <a href="https://www.linkedin.com/in/bola-akinmarin/" target="_blank" alt="Link to Bola's LinkedIn">
+                    <img src="assets/LinkedIn-Logo.png" class="icon text-grow">
+                </a>
             </div>
         </div>
 
@@ -141,8 +177,12 @@
                 <h2>Dyeneffer Dias <span class="title">(Interpreter, Full Stack Software Developer Student at Code Institute)</span></h2>
                 <p>"I'm currently pursuing my Full Stack Software Developer diploma while working as a Consecutive and Over-the-Phone interpreter for over a decade. 
                     Off the clock, you'll find me enjoying quality time with family, doing community volunteer work, and in nature."</p>                    
-                <a href="https://github.com/missdays/" target="_blank" alt="Link to Dyeneffer's GitHub" class="text-grow">Dyeneffer GitHub</a>
-                <a href="https://www.linkedin.com/in/dyenefferdias/" target="_blank" alt="Link to Dyeneffer's LinkedIn" class="text-grow">Dyeneffer LinkedIn</a>
+                <a href="https://github.com/missdays/" target="_blank" alt="Link to Dyeneffer's GitHub">
+                    <img src="assets/github-logo.png" alt="" class="icon text-grow">
+                </a>
+                <a href="https://www.linkedin.com/in/dyenefferdias/" target="_blank" alt="Link to Dyeneffer's LinkedIn">
+                    <img src="assets/LinkedIn-Logo.png" class="icon text-grow">
+                </a>
             </div>
         </div>
 
@@ -151,30 +191,43 @@
             <div class="container clearfix">
                 <h2>Charlie Enright <span class="title">(Archaeologist, Web Development Student at Code Institute)</span></h2>
                 <p>“By day, I am an archaeologist specialising in aerial surveys and 3D modeling, passionate about uncovering the past. 
-                    I am driven by innovative ways to engage wider audiences. Outside of work, I am pursuing a diploma in web application development at the Code Institute.”</p>                    
-                <a href="https://github.com/enrightc" target="_blank" alt="Link to Charlie's GitHub" class="text-grow">Charlie GitHub</a>
-                <a href="https://www.linkedin.com/in/charlie-enright-54443a46/" target="_blank" alt="Link to Charlie's LinkedIn" class="text-grow">Charlie LinkedIn</a>
+                    I am driven by innovative ways to engage wider audiences. Outside of work, I am pursuing a diploma in web application development at Code Institute.”</p>                    
+                <a href="https://github.com/enrightc" target="_blank" alt="Link to Charlie's GitHub">
+                    <img src="assets/github-logo.png" alt="" class="icon text-grow">
+                </a>
+                <a href="https://www.linkedin.com/in/charlie-enright-54443a46/" target="_blank" alt="Link to Charlie's LinkedIn">
+                    <img src="assets/LinkedIn-Logo.png" class="icon text-grow">
+                </a>
             </div>
         </div>
 
         <div class="card">
-            <img src="" alt="Andreas Parides" class="image-right">
+            <img src="assets/Andreas_Parides.jpg" alt="Andreas Parides" class="image-right">
             <div class="container clearfix">
-                <h2>Andreas Parides <span class="title">(Andreas title here)</span></h2>
-                <p>"Andreas intro here"</p>                    
-                <a href="" target="_blank" alt="Link to Andreas's GitHub" class="text-grow">Andreas GitHub</a>
-                <a href="" target="_blank" alt="Link to Andreas's LinkedIn" class="text-grow">Andreas LinkedIn</a>
+                <h2>Andreas Parides <span class="title">(Pilot, Full Stack Software Development Student at Code Institute)</span></h2>
+                <p>"My name is Andreas and I am a Full Stack Developer to be, as I am going through the Code Institutes online course and this is my 2nd Hackathon. 
+                    I am also an airline pilot who is looking, though, to contribute and develop exciting projects through coding and expand my knowledge."</p>                    
+                    <a href="https://github.com/parides55" target="_blank" alt="Link to Andreas's GitHub">
+                        <img src="assets/github-logo.png" alt="" class="icon text-grow">
+                    </a>
+                    <a href="http://www.linkedin.com/in/andreas-parides-104708b1" target="_blank" alt="Link to Andreas's LinkedIn">
+                        <img src="assets/LinkedIn-Logo.png" class="icon text-grow">
+                    </a>
             </div>
         </div>
 
         <div class="card">
             <img src="assets/Adam Photo.jpg" alt="Adam Kestell" class="image-left">
             <div class="container clearfix">
-                <h2>Adam Kestell <span class="title">(Full Stack Software Developer Student, Education Advisor at Code Institute)</span></h2>
-                <p>"By day I'm an Education Advisor who helps students in sstarting their journey of becoming a Software Developer. 
+                <h2>Adam Kestell <span class="title">(Education Advisor at Code Institute)</span></h2>
+                <p>"By day I'm an Education Advisor who helps students in starting their journey of becoming a Software Developer. 
                     By night I'm working through the Full Stack Course to get a students perspective of the course. Other than that I'm a music lover and a massive sports fan."</p>                    
-                <a href="https://github.com/AKestell" target="_blank" alt="Link to Adam's GitHub" class="text-grow">Adam GitHub</a>
-                <a href="https://www.linkedin.com/in/adam-kestell/" target="_blank" alt="Link to Adam's LinkedIn" class="text-grow">Adam LinkedIn</a>
+                <a href="https://github.com/AKestell" target="_blank" alt="Link to Adam's GitHub">
+                    <img src="assets/github-logo.png" alt="" class="icon text-grow">
+                </a>
+                <a href="https://www.linkedin.com/in/adam-kestell/" target="_blank" alt="Link to Adam's LinkedIn">
+                    <img src="assets/LinkedIn-Logo.png" class="icon text-grow">
+                </a>
             </div>
         </div>
     </body>
