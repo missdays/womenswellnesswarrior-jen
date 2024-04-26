@@ -61,6 +61,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
+  
 }
 
 .main-wrapper {
@@ -106,7 +107,7 @@ main {
 .mock-up-image {
     width: 100%;
     object-fit: cover;
-    height: 500px;
+    height: 400px;
     max-width:400px;
     border-radius:24px;
     margin-left:auto;
@@ -130,15 +131,15 @@ main {
   border-radius: 11.803px;
     background: #FFF;
   padding: 6px 25.82px;
-
 }
 
 .start-button {
-    border-radius: 10px;
-    padding: 5px 33px 5px 33px;
+    border-radius: 25px;
+    padding: 1rem;
+    width: 10rem;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     background-color: #693e66;
 }
 
@@ -154,15 +155,15 @@ footer {
     display: block;
     width: 100vw;
     text-align: center;
+    padding-top: 10px; 
+    position: fixed;
 }  
 
 /* Form and Calendar styles */
-
 .body-div {
   width: 100vw;
   height: 100vh;
 }
-
 
 /* This class is called to hide or un-hide various sections*/
 .hide {
@@ -174,7 +175,7 @@ footer {
 h2 {
   text-align: center;
   margin-top: 30px;
-  color: #FD9CC4;
+  color: #894d84;
   font-weight: bolder;
   font-style: italic;
 }
@@ -191,8 +192,8 @@ h2 {
 .my-btn {
   margin-top: 20px;
   background-color: transparent;
-  color: #fffbf6;
-  border-color: #fffbf6;
+  color: #894d84;
+  border-color: #894d84;
 }
 
 .btn:hover {
@@ -286,4 +287,9 @@ h2 {
   #calendar {
     margin: 0 15px;
   }
+}
+
+.phase-info {
+  overflow-y: scroll;
+  height: 30rem;
 }
