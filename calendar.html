@@ -6,7 +6,8 @@
     <title>dot.</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="apple-touch-icon" href="assets/webclip.png" />
-   
+
+    <script src="script.js" defer></script>
     <!-- FullCalendar -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
     <!-- Google Fonts -->
@@ -35,22 +36,28 @@
       crossorigin="anonymous"
     ></script>
 
-  <!-- Font Awesome -->
-  <script
+    <!-- Font Awesome -->
+    <script
       src="https://kit.fontawesome.com/076967cb18.js"
       crossorigin="anonymous"
     ></script>
-</head>
+  </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-    <!-- <div class="container-fluid"> -->
-    <!-- Toggle Button for Mobile View -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <!-- <div class="container-fluid"> -->
+      <!-- Toggle Button for Mobile View -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
     <!-- Navbar Items -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
@@ -86,82 +93,170 @@
       <div class="container-fluid text-center">
         <div class="row">
           <div class="col-sm-8">
-            <div id='calendar'></div>
+            <div id="calendar"></div>
           </div>
           <div class="col-sm-4 info-div">
-            <button class="btn btn-success my-btn" type="button" id="edit-period" title="Year/Month">Edit
-              Period</button>
+            <button
+              class="btn btn-success my-btn"
+              type="button"
+              id="edit-period"
+              title="Year/Month"
+            >
+              Edit Period
+            </button>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <div class="circle circle-blue"></div>
-                  <a data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
-                    Luteal Phase
-                  </a>
-                  <div class="collapse" id="collapse1">
-                    <div class="card card-body">
-                      <p>Luteal Phase</p>
-                      <p>This phase occurs after ovulation and lasts until the start of your next period. You may experience PMS symptoms during this time.</p>
-                      <p>Pms or Pmdd symptoms can cause anxiety and concern, practice stress-relief techniques like meditation or yoga. Maintain a balanced diet with calcium rich foods and drink plenty of water. Monitor mood changes and seek support if needed</p>
-                      <p>Our recommendations for exercise: Low to moderate level intensity, Running, Swimming, Yoga, and Hiking </p>
-                      <p>Possible symptoms: Breast tenderness, Mood swings, Bloating</p>
-                      <p></p>
-                    </div>
+                <a
+                  data-bs-toggle="collapse"
+                  href="#collapse1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapse1"
+                >
+                  Luteal Phase
+                </a>
+                <div class="collapse" id="collapse1">
+                  <div class="card card-body phase-info">
+                    <p>Luteal Phase</p>
+                    <p>
+                      This phase occurs after ovulation and lasts until the
+                      start of your next period. You may experience PMS symptoms
+                      during this time.
+                    </p>
+                    <p>
+                      Pms or Pmdd symptoms can cause anxiety and concern,
+                      practice stress-relief techniques like meditation or yoga.
+                      Maintain a balanced diet with calcium rich foods and drink
+                      plenty of water. Monitor mood changes and seek support if
+                      needed
+                    </p>
+                    <p>
+                      Our recommendations for exercise: Low to moderate level
+                      intensity, Running, Swimming, Yoga, and Hiking
+                    </p>
+                    <p>
+                      Possible symptoms: Breast tenderness, Mood swings,
+                      Bloating
+                    </p>
+                    <p></p>
                   </div>
+                </div>
               </li>
               <li class="list-group-item">
                 <div class="circle circle-red"></div>
-                <a data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#collapse2"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapse2"
+                >
                   Period
-                  </a>
-                  <div class="collapse" id="collapse2">
-                    <div class="card card-body">
-                      <p>Period</p>
-                      <p>The shedding of your uterine lining in order to remove an unfertalised egg.</p>
-                      <p>During this phase, you may experience bleeding and discomfort. Prioritise self-care and manage discomfort with pain relief</p>
-                      <p>Our recommendations for exercise: Low intensity exercises, yoga, Walking  </p>
-                      <p>Possible symptoms: menstrual cramps, fatigue, and mood swings</p>
-                    </div>
+                </a>
+                <div class="collapse" id="collapse2">
+                  <div class="card card-body phase-info">
+                    <p>Period</p>
+                    <p>
+                      The shedding of your uterine lining in order to remove an
+                      unfertalised egg.
+                    </p>
+                    <p>
+                      During this phase, you may experience bleeding and
+                      discomfort. Prioritise self-care and manage discomfort
+                      with pain relief
+                    </p>
+                    <p>
+                      Our recommendations for exercise: Low intensity exercises,
+                      yoga, Walking
+                    </p>
+                    <p>
+                      Possible symptoms: menstrual cramps, fatigue, and mood
+                      swings
+                    </p>
                   </div>
+                </div>
               </li>
               <li class="list-group-item">
                 <div class="circle circle-green"></div>
-                <a data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#collapse3"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapse3"
+                >
                   Follicular Phase
-                  </a>
-                  <div class="collapse" id="collapse3">
-                    <div class="card card-body">
-                      <p>Follicular Phase</p>
-                      <p>This phase starts after your period ends and lasts until ovulation. You may feel more energetic and experience a rise in libido.</p>
-                      <p>Focus on nutrient-rich foods, engage in moderate-intensity exercises. Prioritise adequate sleep and consider tracking your fertility if trying to conceive</p>
-                      <p>Our recommendations for exercise: Higher intensity exercise, Running, HIIT workouts, Weightlifting, Swimming</p>
-                      <p>Possible symptoms: Increased energy levels, heightened libido and lighter vaginal discharge</p>
-                    </div>
+                </a>
+                <div class="collapse" id="collapse3">
+                  <div class="card card-body phase-info">
+                    <p>Follicular Phase</p>
+                    <p>
+                      This phase starts after your period ends and lasts until
+                      ovulation. You may feel more energetic and experience a
+                      rise in libido.
+                    </p>
+                    <p>
+                      Focus on nutrient-rich foods, engage in moderate-intensity
+                      exercises. Prioritise adequate sleep and consider tracking
+                      your fertility if trying to conceive
+                    </p>
+                    <p>
+                      Our recommendations for exercise: Higher intensity
+                      exercise, Running, HIIT workouts, Weightlifting, Swimming
+                    </p>
+                    <p>
+                      Possible symptoms: Increased energy levels, heightened
+                      libido and lighter vaginal discharge
+                    </p>
                   </div>
+                </div>
               </li>
               <li class="list-group-item">
                 <div class="circle circle-purple"></div>
-                <a data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#collapse4"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapse4"
+                >
                   Peak Ovulation
-                  </a>
-                  <div class="collapse" id="collapse4">
-                    <div class="card card-body">
-                      <p>Ovulation Phase</p>
-                      <p>This phase typically occurs around mid-cycle and marks the release of an egg from the ovary. You may experience heightened fertility during this time</p>
-                      <p>Consider using protection if not trying to conceive. Monitor ovulation signs like changes in cervical mucus, or abdominal pain. Engage in intimacy if trying to conceive</p>
-                      <p>Our recommendations for exercise: Moderate intensity exercise, Running, Cycling, Swimming</p>
-                      <p>Possible symptoms: Expected symptoms include: an increased libido, changes in cervical mucus consistency and, mild pelvic discomfort</p>
-                    </div>
+                </a>
+                <div class="collapse" id="collapse4">
+                  <div class="card card-body phase-info">
+                    <p>Ovulation Phase</p>
+                    <p>
+                      This phase typically occurs around mid-cycle and marks the
+                      release of an egg from the ovary. You may experience
+                      heightened fertility during this time
+                    </p>
+                    <p>
+                      Consider using protection if not trying to conceive.
+                      Monitor ovulation signs like changes in cervical mucus, or
+                      abdominal pain. Engage in intimacy if trying to conceive
+                    </p>
+                    <p>
+                      Our recommendations for exercise: Moderate intensity
+                      exercise, Running, Cycling, Swimming
+                    </p>
+                    <p>
+                      Possible symptoms: Expected symptoms include: an increased
+                      libido, changes in cervical mucus consistency and, mild
+                      pelvic discomfort
+                    </p>
                   </div>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    
-  </div>
+    </div>
   </body>
+  <!--
   <footer>
     <p>Women's Wellness Warriors</p>
-  </footer>
+  </footer> -->
   <script src="calender.js"></script>
 </html>
