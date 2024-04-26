@@ -1,20 +1,20 @@
 //Variables
-let StartCalculation = document.getElementById('start-button')
-let StartDate = document.getElementById('start-date')
-let PeriodTime = document.getElementById('period-time')
-let Cycle = document.getElementById('cycle')
-let CalendarSection = document.getElementById('calendar-section')
-let FormSection = document.getElementById('form-section')
-let EditPeriod = document.getElementById('edit-period')
+const StartCalculation = document.getElementById('start-button')
+const StartDate = document.getElementById('start-date')
+const PeriodTime = document.getElementById('period-time')
+const Cycle = document.getElementById('cycle')
+const CalendarSection = document.getElementById('calendar-section')
+const FormSection = document.getElementById('form-section')
+const EditPeriod = document.getElementById('edit-period')
 
 //Event listeners
 //EditPeriod.addEventListener('click', showForm);
 
 window.onload = function () {
-    FormSection.classList.add('hide')
-    CalendarSection.classList.remove('hide')
+    FormSection.classList.add('hide');
+    CalendarSection.classList.remove('hide');
     CalculatePeriod();
-}
+};
 
 function CalculatePeriod() {
     // Retrieve data from local storage
@@ -80,7 +80,7 @@ function CalculatePeriod() {
   function periodEnd(startDate, lengthPeriod) {
   
     happening = new Date(startDate);
-    endinng = happening.setDate(happening.getDate() + parseInt(lengthPeriod));
+    endinng = happening.setDate(happening.getDate() + parseInt(lengthPeriod) - 1);
   
     return endinng;
   }
@@ -115,8 +115,8 @@ function CalculatePeriod() {
   function peakOvulation(endOfPeriod) {
   
     peak = new Date(endOfPeriod);
-    peakStart = peak.setDate(peak.getDate() + 6);
-    peakEnd = peak.setDate(peak.getDate() + 5);
+    peakStart = peak.setDate(peak.getDate() + 5);
+    peakEnd = peak.setDate(peak.getDate() + 4);
   
     return peakStart, peakEnd;
   }
