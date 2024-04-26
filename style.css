@@ -289,3 +289,8 @@ h2 {
     margin: 0 15px;
   }
 }
+
+.phase-info {
+  overflow-y: scroll;
+  height: 30rem;
+}
