@@ -1,2 +1,3 @@
-
-{}
+{"scripts": {
+    "watch:sass": "node-sass -w test.scss test.css"
+},"dependencies":{"node-sass":"^9.0.0"}}
