@@ -1,9 +1,3 @@
-// const userData = {
-//   name: "",
-//   periodStartDate: "",
-//   periodLength: "",
-//   cycleLength: "",
-// }
 //LOCAL STORAGE ARRAY
 const dot_UserData = JSON.parse(localStorage.getItem("dotUserData")) || [];
 
@@ -36,11 +30,9 @@ window.onload = function () {
   FormSection.classList.remove("hide");
 };
 
-
-
 // SUBMIT NAME
 nameButton.addEventListener("click", () => {
-  //checkUsersName();
+  checkUsersName();
   // Set user name in local storage
   const usersName_string = JSON.stringify(usersName.value);
   localStorage.setItem("dot_username", usersName_string);
