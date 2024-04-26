@@ -1,3 +1,12 @@
+// const userData = {
+//   name: "",
+//   periodStartDate: "",
+//   periodLength: "",
+//   cycleLength: "",
+// }
+//LOCAL STORAGE ARRAY
+const dot_UserData = JSON.parse(localStorage.getItem("dotUserData")) || [];
+
 // CONTAINERS
 const nameCard = document.getElementById("name-card");
 const periodStartDateCard = document.getElementById("period-start-date-card");
@@ -5,8 +14,8 @@ const periodLengthCard = document.getElementById("period-length-card");
 const cycleLengthCard = document.getElementById("cycle-length-card");
 const loadingContainer = document.getElementById("loading-container");
 const displayUsername = document.getElementById("display-username");
-const CalendarSection = document.getElementById('calendar-section');
-const FormSection = document.getElementById('form-section');
+const CalendarSection = document.getElementById("calendar-section");
+const FormSection = document.getElementById("form-section");
 
 // BUTTONS
 const nameButton = document.getElementById("name-button");
@@ -23,8 +32,8 @@ const periodLength = document.getElementById("period-length");
 const cycleLength = document.getElementById("cycle-length");
 
 window.onload = function () {
-  CalendarSection.classList.add('hide')
-  FormSection.classList.remove('hide')
+  CalendarSection.classList.add("hide");
+  FormSection.classList.remove("hide");
 };
 
 // SUBMIT NAME
@@ -32,6 +41,7 @@ nameButton.addEventListener("click", () => {
   // Set user name in local storage
   const usersName_string = JSON.stringify(usersName.value);
   localStorage.setItem("dot_username", usersName_string);
+  //checkUsersName();
   // Scale out name card
   nameCard.classList.add("scale-out-center");
   setTimeout(function () {
@@ -88,7 +98,7 @@ cycleLengthButton.addEventListener("click", () => {
   // Set cycle length in local storage
   const cycleLength_string = JSON.stringify(cycleLength.value);
   localStorage.setItem("dot_cycle_length", cycleLength_string);
-  // // Set localStorage
+  // Set localStorage
   // const userDataSerialized = JSON.stringify(userData);
   // localStorage.setItem("userData", userDataSerialized);
   // Scale out cycle length card
@@ -98,10 +108,10 @@ cycleLengthButton.addEventListener("click", () => {
   loadingContainer.classList.remove("hide");
   loadingContainer.classList.add("text-focus-in");
   setTimeout(function () {
+    storeData();
     window.location.href = "calendar.html";
-  }, 500);
+  }, 5000);
 });
-
 
 // // Set user data in form if it exists in local storage
 // if (dotUserName) {
