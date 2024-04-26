@@ -176,7 +176,7 @@ footer {
 h2 {
   text-align: center;
   margin-top: 30px;
-  color: #FD9CC4;
+  color: #894d84;
   font-weight: bolder;
   font-style: italic;
 }
@@ -193,8 +193,8 @@ h2 {
 .my-btn {
   margin-top: 20px;
   background-color: transparent;
-  color: #fffbf6;
-  border-color: #fffbf6;
+  color: #894d84;
+  border-color: #894d84;
 }
 
 .btn:hover {
